@@ -45,20 +45,20 @@ export default function Header() {
             <div className="hidden lg:block w-[1px] h-8 bg-gray-300"></div>
 
             {/* Phones */}
-            <div className="flex flex-col text-xs leading-normal">
+            <div className="flex flex-col text-xs leading-normal font-semibold">
               <a
-                href="tel:9100444999"
+                href="tel:9870009170"
                 className="flex items-center gap-1.5 hover:text-kc-navy-700 transition duration-200"
               >
                 <i className="fas fa-phone-alt text-[10px] text-kc-navy-700 w-4 text-center"></i>
-                +91 91004 44999
+                +91 98700 09170
               </a>
               <a
-                href="tel:9083444999"
+                href="tel:9588630064"
                 className="flex items-center gap-1.5 hover:text-kc-navy-700 transition duration-200"
               >
                 <i className="fas fa-phone-alt text-[10px] text-kc-navy-700 w-4 text-center"></i>
-                +91 90834 44999
+                +91 95886 30064
               </a>
             </div>
 
@@ -88,7 +88,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://www.instagram.com/y2kexim/"
+                href="https://www.instagram.com/y2keximofficial?igsh=MW53eHV4dGp5d2RkZA%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white text-[11px] shadow-sm hover:-translate-y-0.5 transition duration-200"
@@ -98,7 +98,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/y2kexim"
+                href="https://www.linkedin.com/in/y2k-exim-0b9b25423?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-7 h-7 flex items-center justify-center rounded-full bg-[#0077B5] text-white text-[11px] shadow-sm hover:-translate-y-0.5 transition duration-200"

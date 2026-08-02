@@ -1,6 +1,3 @@
-import React from "react";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
 import Marquee from "../components/Marquee";
 import Hero from "../components/Hero";
 import PopupModal from "../components/PopupModal";
@@ -11,21 +8,14 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import Clients from "../components/Clients";
 import Branches from "../components/Branches";
-import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Onload Vision & Mission Popup */}
+      {/* Onload Vision & Mission Popup - Home page only */}
       <PopupModal />
 
-      {/* Top White Header (social links, contact numbers, Profile link) */}
-      <Header />
-
-      {/* Sticky Blue Navbar & Mega Menus */}
-      <Navbar />
-
-      {/* Latest Updates scrolling ticker */}
+      {/* Latest Updates scrolling ticker - Home page only */}
       <Marquee />
 
       <main className="flex-grow flex flex-col">
@@ -53,10 +43,8 @@ export default function Home() {
         {/* Interactive office branch locator */}
         <Branches />
       </main>
-
-      {/* Site Footer with bottom reveal overlay, floating WhatsApp/Top/Sidebar widgets */}
-      <Footer />
     </div>
   );
 }
+
 

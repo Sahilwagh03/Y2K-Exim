@@ -6,51 +6,19 @@ export default function Footer() {
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
 
   useEffect(() => {
-    // 1. Scroll reveal panel logic
-    const panel = document.getElementById("kcRevealPanel");
-    const spacer = document.getElementById("kcRevealSpacer");
-
-    const updateReveal = () => {
-      if (!panel || !spacer) return;
-      const spacerRect = spacer.getBoundingClientRect();
-      const viewportH = window.innerHeight;
-      const panelH = panel.offsetHeight;
-
-      const raw = viewportH - spacerRect.top;
-      let progress = raw / panelH;
-      if (progress < 0) progress = 0;
-      if (progress > 1) progress = 1;
-
-      if (progress > 0) {
-        panel.style.visibility = "visible";
-        panel.style.opacity = String(progress);
-        panel.style.pointerEvents = progress > 0.5 ? "auto" : "none";
-      } else {
-        panel.style.visibility = "hidden";
-        panel.style.opacity = "0";
-        panel.style.pointerEvents = "none";
-      }
-    };
-
-    // 2. Scroll to top visibility logic
+    // Scroll to top visibility logic
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setScrollTopVisible(true);
       } else {
         setScrollTopVisible(false);
       }
-      updateReveal();
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", updateReveal);
-
-    // Run initial positioning
-    updateReveal();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", updateReveal);
     };
   }, []);
 
@@ -86,8 +54,8 @@ export default function Footer() {
                 {[
                   { icon: "fab fa-facebook-f", link: "https://www.facebook.com/y2kexim" },
                   { icon: "fab fa-twitter", link: "https://x.com/y2kexim" },
-                  { icon: "fab fa-instagram", link: "https://www.instagram.com/y2kexim/" },
-                  { icon: "fab fa-linkedin-in", link: "https://www.linkedin.com/company/y2kexim" },
+                  { icon: "fab fa-instagram", link: "https://www.instagram.com/y2keximofficial?igsh=MW53eHV4dGp5d2RkZA%3D%3D&utm_source=qr" },
+                  { icon: "fab fa-linkedin-in", link: "https://www.linkedin.com/in/y2k-exim-0b9b25423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" },
                   { icon: "fab fa-youtube", link: "https://www.youtube.com/@y2kexim" }
                 ].map((social, i) => (
                   <a
@@ -116,7 +84,6 @@ export default function Footer() {
                   { text: "About Us", link: "/about-us" },
                   { text: "Services", link: "/dgft-consultants" },
                   { text: "Contact Us", link: "/contact-us" },
-                  { text: "Career", link: "/career" },
                   { text: "Privacy Policy", link: "/policy" }
                 ].map((item, i) => (
                   <li key={i}>
@@ -144,13 +111,13 @@ export default function Footer() {
                     Flat No E-110, 1st Floor, SVSS Nivas, Opp Gokul Theatre, Street No 1, Czech Colony, Sanathnagar, <b className="text-white font-bold">Hyderabad - 500 018 (TG)</b>
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
+                 <div className="flex items-center gap-3">
                   <i className="fas fa-phone-alt text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="font-medium">+91 91004 44999</p>
+                  <p className="font-medium">+91 98700 09170</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-phone-alt text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="font-medium">+91 90834 44999</p>
+                  <p className="font-medium">+91 95886 30064</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-envelope text-white w-4 text-center flex-shrink-0"></i>
@@ -195,36 +162,6 @@ export default function Footer() {
         </footer>
       </div>
 
-      {/* Fly-away Reveal Spacer */}
-      <div id="kcRevealSpacer" className="h-[260px] md:h-[340px] bg-[#ea580c] opacity-0 relative z-0 pointer-events-none" aria-hidden="true"></div>
-
-      {/* Fly-away Fixed Reveal Panel */}
-      <div
-        id="kcRevealPanel"
-        className="fixed left-0 right-0 bottom-0 h-[260px] md:h-[340px] z-0 flex flex-col items-center justify-center bg-gradient-to-tr from-[#ea580c] to-[#f97316] overflow-hidden pointer-events-none select-none opacity-0 invisible"
-        aria-hidden="true"
-      >
-        <div className="flex items-center gap-4 select-none drop-shadow-[0_0_40px_rgba(255,255,255,0.22)]">
-          <svg
-            className="h-28 w-28 text-white fill-none stroke-current stroke-2 animate-pulse"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-          </svg>
-          <div className="flex flex-col text-left">
-            <span className="font-display font-extrabold text-5xl text-white leading-none tracking-wide">
-              Y2k Exim
-            </span>
-            <span className="text-[14px] text-amber-200 font-bold tracking-[0.25em] uppercase mt-2">
-              Group
-            </span>
-          </div>
-        </div>
-        <p className="absolute bottom-6 text-[10px] md:text-xs tracking-[0.08em] text-white/90 uppercase font-semibold">
-          DGFT &middot; CUSTOMS &middot; TAXATION &middot; INDUSTRIAL SUBSIDIES
-        </p>
-      </div>
 
       {/* FLOATING WIDGETS */}
 
@@ -243,7 +180,7 @@ export default function Footer() {
 
       {/* WhatsApp Floating Chat */}
       <a
-        href="https://wa.me/919100444999"
+        href="https://wa.me/919870009170"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-12 left-6 z-[999] hover:scale-105 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 block"

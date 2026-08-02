@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -35,7 +38,12 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Header />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

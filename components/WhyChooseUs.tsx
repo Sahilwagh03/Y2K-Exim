@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white border border-orange-100 rounded-xl p-[2rem_1.75rem] shadow-xs hover:bg-orange-50/20 hover:border-orange-300 hover:shadow-md hover:-translate-y-1.5 transition-all duration-300 group z-10"
+              className="bg-white border border-orange-100 rounded-xl p-[2rem_1.75rem] shadow-xs hover:border-orange-300 hover:shadow-md hover:-translate-y-1.5 transition-all duration-300 group z-10"
             >
               {/* Icon */}
               <div className="w-12 h-12 rounded-lg bg-orange-100 border border-orange-200 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-300">
