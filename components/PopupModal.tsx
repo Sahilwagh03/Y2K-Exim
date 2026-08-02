@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -54,14 +55,12 @@ export default function PopupModal() {
         <div className="p-[22px_26px_18px] overflow-y-auto">
           {/* Header */}
           <div className="text-center pb-2.5 border-b border-gray-200 mb-4 flex flex-col items-center">
-            <div className="flex items-center gap-2 mb-2">
-              <svg
-                className="h-9 w-9 text-kc-orange fill-none stroke-current stroke-2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
+            <div className="flex items-center gap-3 mb-2">
+              <img
+                src="/img/y2k-logo.jpg"
+                alt="Y2K Exim Logo"
+                className="h-10 w-10 object-cover rounded-full border border-orange-100 shadow-xs"
+              />
               <div className="flex flex-col text-left">
                 <span className="font-display font-extrabold text-lg text-kc-navy-700 leading-none tracking-wide">
                   Y2k Exim
