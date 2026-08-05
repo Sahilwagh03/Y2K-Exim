@@ -21,7 +21,7 @@ export default function NavbarLogo({ size = "desktop" }: NavbarLogoProps) {
           Y2k Exim
         </span>
         <span className={`${isDesktop ? "text-[9px]" : "text-[8px]"} text-kc-gold font-bold tracking-[0.2em] uppercase mt-0.5`}>
-          Group
+          Services Pvt Ltd
         </span>
       </div>
     </a>

@@ -1,6 +1,5 @@
 import Marquee from "../components/Marquee";
 import Hero from "../components/Hero";
-import PopupModal from "../components/PopupModal";
 import Commitment from "../components/Commitment";
 import Services from "../components/Services";
 import About from "../components/About";
@@ -12,8 +11,6 @@ import Branches from "../components/Branches";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Onload Vision & Mission Popup - Home page only */}
-      <PopupModal />
 
       {/* Latest Updates scrolling ticker - Home page only */}
       <Marquee />

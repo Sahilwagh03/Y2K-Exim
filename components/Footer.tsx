@@ -108,24 +108,16 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <i className="fas fa-map-marker-alt text-white mt-1 w-4 text-center flex-shrink-0"></i>
                   <p className="leading-relaxed">
-                    Flat No E-110, 1st Floor, SVSS Nivas, Opp Gokul Theatre, Street No 1, Czech Colony, Sanathnagar, <b className="text-white font-bold">Hyderabad - 500 018 (TG)</b>
+                    Office No 420, 4th Floor, Plot No 79, Himalaya House, Ramabai Ambedkar Marg, Crawford Market, Fort, <b className="text-white font-bold">Mumbai - 400 001 (MS)</b>
                   </p>
-                </div>
-                 <div className="flex items-center gap-3">
-                  <i className="fas fa-phone-alt text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="font-medium">+91 98700 09170</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-phone-alt text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="font-medium">+91 95886 30064</p>
+                  <p className="font-medium">+91 77749 88189</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-envelope text-white w-4 text-center flex-shrink-0"></i>
                   <p className="break-all font-medium">info@y2kexim.com</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <i className="fas fa-envelope text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="break-all font-medium">info2@y2kexim.com</p>
                 </div>
                 <div className="flex items-center gap-3 pt-1 border-t border-orange-400">
                   <i className="fas fa-clock text-white w-4 text-center flex-shrink-0"></i>
@@ -144,7 +136,7 @@ export default function Footer() {
               <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white bg-[length:200%_100%] animate-kc-shimmer rounded-full mb-5"></div>
               <div className="w-full h-[200px] rounded-xl overflow-hidden border border-white/20 shadow-sm relative bg-orange-700/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.686399436083!2d78.4356145!3d17.4544011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e6a7f99bf9%3A0x7903212b09d1a346!2sKireeti%20Consultants!5e1!3m2!1sen!2sin!4v1748514415531!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.396556102717!2d72.8340621759458!3d18.946327354388836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce20c4368205%3A0x673c683b5192131b!2sHimalaya%20House%2C%2079%2C%20Palton%20Rd%2C%20Crawford%20Market%2C%20Fort%2C%20Mumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1722864000000!5m2!1sen!2sin"
                   className="absolute top-0 left-0 w-full h-full border-none"
                   allowFullScreen
                   loading="lazy"
@@ -168,9 +160,8 @@ export default function Footer() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-12 right-6 w-14 h-14 rounded-full bg-white text-kc-orange shadow-lg flex items-center justify-center cursor-pointer hover:bg-orange-100 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 z-[999] ${
-          scrollTopVisible ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-        }`}
+        className={`fixed bottom-12 right-6 w-14 h-14 rounded-full bg-white text-kc-orange shadow-lg flex items-center justify-center cursor-pointer hover:bg-orange-100 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 z-[999] ${scrollTopVisible ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+          }`}
         aria-label="Scroll to top of the page"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
@@ -180,7 +171,7 @@ export default function Footer() {
 
       {/* WhatsApp Floating Chat */}
       <a
-        href="https://wa.me/919870009170"
+        href="https://wa.me/917774988189"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-12 left-6 z-[999] hover:scale-105 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 block"

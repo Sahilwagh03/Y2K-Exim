@@ -32,33 +32,19 @@ export default function Header() {
                 <i className="fas fa-envelope text-[10px] text-kc-navy-700 w-4 text-center"></i>
                 info@y2kexim.com
               </a>
-              <a
-                href="mailto:info2@y2kexim.com"
-                className="flex items-center gap-1.5 hover:text-kc-navy-700 transition duration-200"
-              >
-                <i className="fas fa-envelope text-[10px] text-kc-navy-700 w-4 text-center"></i>
-                info2@y2kexim.com
-              </a>
             </div>
 
             {/* Divider */}
             <div className="hidden lg:block w-[1px] h-8 bg-gray-300"></div>
 
-            {/* Phones */}
+            {/* Phone */}
             <div className="flex flex-col text-xs leading-normal font-semibold">
               <a
-                href="tel:9870009170"
+                href="tel:+917774988189"
                 className="flex items-center gap-1.5 hover:text-kc-navy-700 transition duration-200"
               >
                 <i className="fas fa-phone-alt text-[10px] text-kc-navy-700 w-4 text-center"></i>
-                +91 98700 09170
-              </a>
-              <a
-                href="tel:9588630064"
-                className="flex items-center gap-1.5 hover:text-kc-navy-700 transition duration-200"
-              >
-                <i className="fas fa-phone-alt text-[10px] text-kc-navy-700 w-4 text-center"></i>
-                +91 95886 30064
+                +91 77749 88189
               </a>
             </div>
 

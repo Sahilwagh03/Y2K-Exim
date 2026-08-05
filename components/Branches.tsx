@@ -20,7 +20,7 @@ export default function Branches() {
       name: "Mumbai",
       title: "Mumbai Office",
       address: "-135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614",
-      phones: ["+91-9870009170", "+91-9588630064"],
+      phones: ["+91-7774988189"],
       email: "pramod@y2kexim.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       mapUrl: "https://maps.google.com/maps?q=-135,%20A%20%E2%80%93%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20stn.%20Belapur%20Navi%20Mumbai.%20-%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -30,7 +30,7 @@ export default function Branches() {
       name: "Gujarat",
       title: "Gujarat Office",
       address: "115, Manali Tower, Oslo Road , Gandhidham (Kutch), Gujrat -370201.",
-      phones: ["+91-9870009170", "+91-9588630064"],
+      phones: ["+91-7774988189"],
       email: "pramod@y2kexim.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       mapUrl: "https://maps.google.com/maps?q=115,%20Manali%20Tower,%20Oslo%20Road%20,%20Gandhidham%20(Kutch),%20Gujrat%20-370201.&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -40,7 +40,7 @@ export default function Branches() {
       name: "Chennai",
       title: "Chennai Office",
       address: "130, Mint Street, 4th Floor, Shree Center, Sowcarpet, Chennai -600079.",
-      phones: ["+91-9870009170", "+91-9588630064"],
+      phones: ["+91-7774988189"],
       email: "pramod@y2kexim.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       mapUrl: "https://maps.google.com/maps?q=130,%20Mint%20Street,%204th%20Floor,%20Shree%20Center,%20Sowcarpet,%20Chennai%20-600079.&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -50,7 +50,7 @@ export default function Branches() {
       name: "Kolkata",
       title: "Kolkata Office",
       address: "15/1, Strand Road, Custom House, Kolkata - 700001.",
-      phones: ["+91-9870009170", "+91-9588630064"],
+      phones: ["+91-7774988189"],
       email: "pramod@y2kexim.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       mapUrl: "https://maps.google.com/maps?q=15/1,%20Strand%20Road,%20Custom%20House,%20Kolkata%20-%20700001.&t=&z=15&ie=UTF8&iwloc=&output=embed"

@@ -15,28 +15,28 @@ const branches: BranchInfo[] = [
     city: "Mumbai",
     icon: "fas fa-ship",
     address: "Office No 420, 4th Floor, Plot No 79, Himalaya House, Ramabai Ambedkar Marg, Crawford Market, Fort, Mumbai - 400 001 (MS)",
-    phones: ["+91-9870009170", "+91-9588630064"],
+    phones: ["+91-7774988189"],
     mapLink: "https://maps.app.goo.gl/JdvW9vjushM4Eh1h6"
   },
   {
     city: "Gujarat",
     icon: "fas fa-industry",
     address: "Office 912-B, 9th Floor, Sun West Bank, Opp City Gold Cinema, Ashram Road, Ahmedabad - 380 009 (GJ)",
-    phones: ["+91-9870009170", "+91-9588630064"],
+    phones: ["+91-7774988189"],
     mapLink: "https://maps.app.goo.gl/83iJ9p3L7143PKCJ6"
   },
   {
     city: "Chennai",
     icon: "fas fa-anchor",
     address: "Office No 37/6, Alagiri Nagar, 5th Street, 100 Ft Road, Vadapalani, Chennai - 600 026 (TN)",
-    phones: ["+91-9870009170", "+91-9588630064"],
+    phones: ["+91-7774988189"],
     mapLink: "https://maps.app.goo.gl/GqAGHBRGzB9DJh2G6"
   },
   {
     city: "Kolkata",
     icon: "fas fa-bridge",
     address: "Office No 3B Ground Floor, Premises No.79, Commercial Point, Lenin Sarani, P S Taltala, Kolkata - 700 013 (WB)",
-    phones: ["+91-9870009170", "+91-9588630064"],
+    phones: ["+91-7774988189"],
     mapLink: "https://maps.app.goo.gl/VLurCtXhiLvZCst87"
   }
 ];
@@ -86,13 +86,10 @@ export default function ContactUsPage() {
             <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
               <i className="fas fa-phone-alt text-xl"></i>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Phone Numbers</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Phone Number</h3>
             <div className="space-y-1 font-semibold">
-              <a href="tel:+919870009170" className="block text-gray-600 hover:text-kc-orange text-sm transition">
-                +91 98700 09170
-              </a>
-              <a href="tel:+919588630064" className="block text-gray-600 hover:text-kc-orange text-sm transition">
-                +91 95886 30064
+              <a href="tel:+917774988189" className="block text-gray-600 hover:text-kc-orange text-sm transition">
+                +91 77749 88189
               </a>
             </div>
           </div>
@@ -106,9 +103,6 @@ export default function ContactUsPage() {
             <div className="space-y-1">
               <a href="mailto:info@y2kexim.com" className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
                 info@y2kexim.com
-              </a>
-              <a href="mailto:info2@y2kexim.com" className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
-                info2@y2kexim.com
               </a>
             </div>
           </div>

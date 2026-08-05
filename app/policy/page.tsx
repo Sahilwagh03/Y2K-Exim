@@ -5,12 +5,12 @@ import React from "react";
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
-      
+
       {/* Light Premium Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/60 via-amber-50/30 to-slate-50/50 py-16 px-6 md:px-12 border-b border-orange-100/50">
         <div className="absolute inset-0 bg-radial-dots opacity-40 pointer-events-none"></div>
         <div className="absolute -top-40 right-10 w-[600px] h-[600px] bg-gradient-to-br from-orange-200/20 to-amber-200/10 rounded-full blur-3xl pointer-events-none"></div>
-        
+
         <div className="max-w-[1440px] mx-auto text-center relative z-10">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100/70 text-xs font-semibold text-kc-orange mb-5 shadow-2xs">
             <i className="fas fa-shield-alt text-xs text-kc-orange"></i>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
       {/* Main Content */}
       <main className="max-w-4xl mx-auto w-full px-4 md:px-8 py-14">
         <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-2xs space-y-8 text-gray-600 text-sm md:text-base leading-relaxed font-medium">
-          
+
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-[#1a2d54]">1. Introduction</h2>
             <p>
@@ -95,8 +95,8 @@ export default function PrivacyPolicyPage() {
               If you have any questions, clarifications, or concerns regarding your business documentation and privacy, please contact our administrative desk:
             </p>
             <p className="mt-2 text-xs md:text-sm">
-              Email: <a href="mailto:info@y2kexim.com" className="text-kc-orange hover:underline">info@y2kexim.com</a> / <a href="mailto:info2@y2kexim.com" className="text-kc-orange hover:underline">info2@y2kexim.com</a> <br />
-              Corporate Phone Desk: <a href="tel:+919870009170" className="text-kc-orange hover:underline">+91 98700 09170 / +91 95886 30064</a>
+              Email: <a href="mailto:info@y2kexim.com" className="text-kc-orange hover:underline">info@ykexim.com</a> / <a href="mailto:info@y2kexim.com" className="text-kc-orange hover:underline">info2@y2kexim.com</a> <br />
+              Corporate Phone Desk: <a href="tel:+917774988189" className="text-kc-orange hover:underline">+91 77749 88189</a>
             </p>
           </section>
 
