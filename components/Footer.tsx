@@ -108,7 +108,7 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <i className="fas fa-map-marker-alt text-white mt-1 w-4 text-center flex-shrink-0"></i>
                   <p className="leading-relaxed">
-                    Office No 420, 4th Floor, Plot No 79, Himalaya House, Ramabai Ambedkar Marg, Crawford Market, Fort, <b className="text-white font-bold">Mumbai - 400 001 (MS)</b>
+                    -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
                   </p>
                 </div>
                 <div className="flex items-center gap-3">

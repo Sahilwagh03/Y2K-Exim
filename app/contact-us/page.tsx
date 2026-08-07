@@ -14,7 +14,7 @@ const branches: BranchInfo[] = [
   {
     city: "Mumbai",
     icon: "fas fa-ship",
-    address: "Office No 420, 4th Floor, Plot No 79, Himalaya House, Ramabai Ambedkar Marg, Crawford Market, Fort, Mumbai - 400 001 (MS)",
+    address: "-135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614",
     phones: ["+91-7774988189"],
     mapLink: "https://maps.app.goo.gl/JdvW9vjushM4Eh1h6"
   },
@@ -77,7 +77,7 @@ export default function ContactUsPage() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-3">Our Location</h3>
             <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-medium">
-              Office No 420, 4th Floor, Plot No 79, Himalaya House, Ramabai Ambedkar Marg, Crawford Market, Fort, <strong className="text-gray-800">Mumbai - 400 001 (MS)</strong>
+              -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
             </p>
           </div>
 
