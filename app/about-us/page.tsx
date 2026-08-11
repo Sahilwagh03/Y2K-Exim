@@ -3,14 +3,14 @@ import AboutUsClient from "@/components/pages/AboutUsClient";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "About Us | Premier EXIM, DGFT & Customs Consultancy Firm India",
+  title: "About Us | DGFT & Customs Experts",
   description:
-    "Learn about Y2K Exim Services Pvt Ltd. Over 28 years of excellence in DGFT licensing, Customs House Agent (CHA) clearance, GST, and Government Subsidies consultancy across India.",
+    "Learn about Y2K Exim Services Pvt Ltd. Over 28 years of excellence in DGFT licensing, Customs House Agent (CHA) clearance, and Subsidies in India.",
   alternates: {
     canonical: "/about-us",
   },
   openGraph: {
-    title: "About Us | Y2K Exim Services Pvt Ltd",
+    title: "About Us | Y2K Exim Services",
     description:
       "Over 28 years of trusted EXIM compliance, DGFT licensing, CHA clearance, and corporate subsidy advisory in India.",
     url: "https://www.y2kexim.com/about-us",

@@ -3,14 +3,14 @@ import CustomsClient from "@/components/pages/CustomsClient";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Customs House Agent (CHA) Services & ICEGATE Clearance | Nhava Sheva, Mundra",
+  title: "Customs House Agent Services",
   description:
-    "Licensed Customs House Agent (CHA) services by Y2K Exim. Import-export customs clearance, ICEGATE filing, MOOWR duty deferral, AEO certification, AD Code registration, and port logistics in India.",
+    "Licensed Customs House Agent (CHA) services for import-export clearance, ICEGATE filing, MOOWR scheme, AEO certification, and logistics.",
   alternates: {
     canonical: "/Customs-House-Agent-Services",
   },
   openGraph: {
-    title: "Customs House Agent (CHA) Services & Compliance Hub | Y2K Exim",
+    title: "Customs House Agent Services | Y2K Exim",
     description:
       "Reliable customs clearing, freight logistics, ICEGATE filing, and AEO certification in Nhava Sheva, Mundra, Chennai, and PAN India.",
     url: "https://www.y2kexim.com/Customs-House-Agent-Services",

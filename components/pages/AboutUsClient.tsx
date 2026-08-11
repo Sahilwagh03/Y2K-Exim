@@ -162,7 +162,7 @@ export default function AboutUsClient() {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/10 to-transparent pointer-events-none"></div>
                     <div className="absolute bottom-6 left-6 text-white z-10">
                       <div className="text-xs text-orange-400 font-bold tracking-widest uppercase mb-1">{member.role}</div>
-                      <h4 className="text-lg font-bold">{member.name}</h4>
+                      <div className="text-lg font-bold">{member.name}</div>
                     </div>
                   </div>
 

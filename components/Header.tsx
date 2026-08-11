@@ -8,13 +8,12 @@ export default function Header() {
           {/* Profile (left slot, replaces the logo in this top header bar) */}
           <div className="flex items-center flex-shrink-0">
             <a
-              href="/files/y2k-exim-group.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/about-us"
+              aria-label="View Y2K Exim Corporate Profile"
               className="flex items-center justify-center gap-2 px-6 py-2 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold text-xs rounded-full shadow-md hover:scale-105 transition-all duration-200"
             >
-              <i className="fas fa-download"></i>
-              <span>Profile</span>
+              <i className="fas fa-building"></i>
+              <span>Corporate Profile</span>
             </a>
           </div>
 

@@ -67,42 +67,47 @@ export default function ContactUsClient() {
       {/* Main Content Info Cards */}
       <main className="max-w-360 mx-auto w-full px-4 md:px-8 py-10 space-y-16">
 
-        {/* Top 3 Info Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 - Address */}
-          <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
-            <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
-              <i className="fas fa-map-marker-alt text-xl"></i>
+        {/* Section 1: Quick Contact Channels */}
+        <section>
+          <h2 className="text-2xl md:text-3xl font-extrabold font-display text-gray-900 text-center mb-8">
+            Official Contact Channels
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card 1 - Address */}
+            <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
+              <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
+                <i className="fas fa-map-marker-alt text-xl"></i>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Our Location</h3>
+              <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-medium">
+                -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Our Location</h3>
-            <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-medium">
-              -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
-            </p>
-          </div>
 
-          {/* Card 2 - Phone */}
-          <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
-            <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
-              <i className="fas fa-phone-alt text-xl"></i>
+            {/* Card 2 - Phone */}
+            <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
+              <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
+                <i className="fas fa-phone-alt text-xl"></i>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Phone Number</h3>
+              <div className="space-y-1 font-semibold">
+                <a href="tel:+917774988189" className="block text-gray-600 hover:text-kc-orange text-sm transition">
+                  +91 77749 88189
+                </a>
+              </div>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Phone Number</h3>
-            <div className="space-y-1 font-semibold">
-              <a href="tel:+917774988189" className="block text-gray-600 hover:text-kc-orange text-sm transition">
-                +91 77749 88189
-              </a>
-            </div>
-          </div>
 
-          {/* Card 3 - Email */}
-          <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
-            <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
-              <i className="fas fa-envelope text-xl"></i>
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Email Addresses</h3>
-            <div className="space-y-1">
-              <a href="mailto:info@y2kexim.com" className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
-                info@y2kexim.com
-              </a>
+            {/* Card 3 - Email */}
+            <div className="bg-white rounded-2xl p-8 text-center border border-slate-200 shadow-2xs hover:-translate-y-1 transition duration-200">
+              <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-6 text-kc-orange">
+                <i className="fas fa-envelope text-xl"></i>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Email Addresses</h3>
+              <div className="space-y-1">
+                <a href="mailto:info@y2kexim.com" className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
+                  info@y2kexim.com
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -119,62 +124,31 @@ export default function ContactUsClient() {
             <div className="w-16 h-1 bg-kc-orange mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {branches.map((branch, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-50/50 rounded-xl border border-slate-200/80 p-5 flex flex-col justify-between hover:border-orange-200/70 hover:shadow-xs transition duration-200"
-              >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {branches.map((b, i) => (
+              <div key={i} className="bg-slate-50/70 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:bg-white hover:shadow-md transition duration-200">
                 <div>
-                  <div className="w-10 h-10 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mx-auto mb-4 text-kc-orange">
-                    <i className={`${branch.icon} text-sm`}></i>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-orange-100/70 text-kc-orange flex items-center justify-center font-bold">
+                      <i className={`${b.icon} text-base`}></i>
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 font-display">{b.city} Office</h3>
                   </div>
-                  <h3 className="text-sm font-bold text-gray-900 text-center mb-2">{branch.city}</h3>
-                  <p className="text-gray-500 text-[11px] leading-relaxed text-center mb-3 font-medium">
-                    {branch.address}
+                  <p className="text-gray-600 text-xs leading-relaxed mb-4 font-medium">
+                    {b.address}
                   </p>
                 </div>
-
-                <div className="space-y-3 mt-2">
-                  <div className="text-center flex flex-col gap-0.5">
-                    {branch.phones.map((phone, pIdx) => (
-                      <a
-                        key={pIdx}
-                        href={`tel:${phone.replace(/\s+/g, "")}`}
-                        className="text-[11px] font-semibold text-orange-600 hover:text-orange-700 transition"
-                      >
-                        {phone}
-                      </a>
-                    ))}
-                  </div>
-                  <div className="text-center">
-                    <a
-                      href={branch.mapLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block w-full text-center bg-[#1a2d54] text-white text-[10px] font-bold px-3 py-1.5 rounded-md hover:bg-kc-orange hover:shadow-2xs transition-all"
-                    >
-                      Get Directions
-                    </a>
-                  </div>
-                </div>
+                <a
+                  href={b.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-bold text-kc-orange hover:underline pt-3 border-t border-slate-200/80"
+                >
+                  <span>View Location Map</span>
+                  <i className="fas fa-arrow-right text-[10px]"></i>
+                </a>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Business Hours */}
-        <section className="bg-white rounded-2xl border border-slate-200 p-8 shadow-2xs ">
-          <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Business Operating Hours</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-4 rounded-lg bg-orange-50/40 border border-orange-100/30 flex justify-between items-center text-xs font-semibold text-gray-700">
-              <span>Monday - Saturday</span>
-              <span className="text-orange-700">9:30 AM - 6:30 PM</span>
-            </div>
-            <div className="p-4 rounded-lg bg-orange-50/40 border border-orange-100/30 flex justify-between items-center text-xs font-semibold text-gray-700">
-              <span>Sunday</span>
-              <span className="text-orange-700">Closed</span>
-            </div>
           </div>
         </section>
 

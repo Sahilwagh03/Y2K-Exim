@@ -3,14 +3,14 @@ import DGFTClient from "@/components/pages/DGFTClient";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "DGFT Consultants & EXIM Licensing Directory | Advance Auth, EPCG, RoDTEP",
+  title: "DGFT Consultants & Licensing",
   description:
-    "Explore Y2K Exim's comprehensive DGFT consultancy database for Advance Authorisation, EPCG scheme, RoDTEP export incentives, Duty Drawback, and Star Export House certification in India.",
+    "Expert DGFT consultancy for Advance Authorisation, EPCG scheme, RoDTEP, Duty Drawback, and Star Export House certification across India.",
   alternates: {
     canonical: "/dgft-consultants",
   },
   openGraph: {
-    title: "DGFT Consultants & EXIM Licensing Directory | Y2K Exim",
+    title: "DGFT Consultants & Licensing | Y2K Exim",
     description:
       "Complete guide and service portal for DGFT licensing, EPCG schemes, Advance Authorisations, RoDTEP, and EXIM policy compliance.",
     url: "https://www.y2kexim.com/dgft-consultants",

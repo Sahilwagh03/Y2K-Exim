@@ -3,14 +3,14 @@ import SubsidiesClient from "@/components/pages/SubsidiesClient";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Industrial & Agricultural Subsidies Advisory | Central & State Schemes India",
+  title: "Industrial Subsidies Advisory",
   description:
-    "Discover central and state government subsidy schemes for industrial units, food processing, logistics, and agriculture. Y2K Exim provides end-to-end subsidy filing and claim advisory in India.",
+    "Advisory for central and state government industrial subsidies, food processing incentives, capital grants, and interest subvention in India.",
   alternates: {
     canonical: "/industrial-subsidies",
   },
   openGraph: {
-    title: "Industrial & Agricultural Subsidies Directory | Y2K Exim",
+    title: "Industrial Subsidies Advisory | Y2K Exim",
     description:
       "Expert advisory for Central and State Government Industrial Subsidies, Ministry of Food Processing Industries (MOFPI), MoFPI, and state incentive schemes.",
     url: "https://www.y2kexim.com/industrial-subsidies",

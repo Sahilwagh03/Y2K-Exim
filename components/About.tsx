@@ -54,9 +54,9 @@ export default function About() {
                     <i className={`${stat.icon} text-kc-orange text-xl`}></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800 text-xl leading-tight">
+                    <h3 className="font-bold text-gray-800 text-xl leading-tight">
                       {stat.title}
-                    </h4>
+                    </h3>
                     <p className="text-gray-500 text-xs mt-0.5">
                       {stat.desc}
                     </p>

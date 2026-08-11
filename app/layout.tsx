@@ -21,11 +21,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.y2kexim.com"),
   title: {
-    default: "Y2K Exim Services | Top DGFT Consultants, CA, Customs & Subsidies India",
+    default: "Y2K Exim Services | DGFT & Customs Consultants",
     template: "%s | Y2K Exim Services",
   },
   description:
-    "Y2K Exim Indenting and Services Pvt Ltd provides expert consultancy for DGFT EXIM licensing, Customs Clearance (CHA), Corporate Tax & GST, and Industrial Subsidies across India.",
+    "Y2K Exim Pvt Ltd provides expert consultancy for DGFT licensing, Customs Clearance (CHA), GST taxation, and Industrial Subsidies across India.",
   keywords: [
     "DGFT Consultants",
     "EXIM Licensing",
