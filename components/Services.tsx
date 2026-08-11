@@ -6,26 +6,30 @@ export default function Services() {
       icon: "https://www.kireeticonsultants.com/img/services-icons/dgft-icon.png",
       title: "DGFT Services",
       text: "Expert assistance with all DGFT-related documentation and compliance for smooth import and export operations.",
-      link: "/dgft-consultants"
+      link: "/dgft-consultants",
+      actionText: "Explore DGFT Consultancy",
     },
     {
       icon: "https://www.kireeticonsultants.com/img/services-icons/subsidy-icon.png",
       title: "Industrial Subsidies",
       text: "Accurate guidance on eligibility, documentation, and claim processes for industrial subsidies and incentives.",
-      link: "/industrial-subsidies"
+      link: "/industrial-subsidies",
+      actionText: "Discover Industrial Subsidies",
     },
     {
       icon: "https://www.kireeticonsultants.com/img/services-icons/customs-icon.png",
       title: "Customs & Shipping",
       text: "End-to-end customs solutions including clearance, documentation, and compliance for seamless cross-border trade.",
-      link: "/Customs-House-Agent-Services"
+      link: "/Customs-House-Agent-Services",
+      actionText: "View Customs House Agent Services",
     },
     {
       icon: "https://www.kireeticonsultants.com/img/services-icons/gst-icon.png",
       title: "Taxation",
       text: "Ensuring your trade operations comply with all GST regulations and related tax requirements for seamless compliance.",
-      link: "/gst"
-    }
+      link: "/Taxation",
+      actionText: "Explore Taxation & GST Advisory",
+    },
   ];
 
   return (
@@ -69,9 +73,10 @@ export default function Services() {
               {/* Action Link */}
               <a
                 href={service.link}
+                aria-label={service.actionText}
                 className="text-kc-orange font-bold hover:text-orange-600 inline-flex items-center text-sm gap-1 hover:gap-2 transition-all duration-200"
               >
-                <span>Learn More</span>
+                <span>{service.actionText}</span>
                 <i className="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
