@@ -20,10 +20,10 @@ export default function About() {
   ];
 
   const illustrations = [
-    "https://www.kireeticonsultants.com/img/services-icons/dgft-icon%20(1).png",
-    "https://www.kireeticonsultants.com/img/services-icons/about-subsidy-icon%20(1).png",
-    "https://www.kireeticonsultants.com/img/services-icons/about-customs-icon.png",
-    "https://www.kireeticonsultants.com/img/services-icons/about-taxation-icon.png"
+    { src: "https://www.kireeticonsultants.com/img/services-icons/dgft-icon%20(1).png", alt: "DGFT Licensing & EXIM Compliance Consultancy" },
+    { src: "https://www.kireeticonsultants.com/img/services-icons/about-subsidy-icon%20(1).png", alt: "Industrial & Agricultural Subsidies Advisory" },
+    { src: "https://www.kireeticonsultants.com/img/services-icons/about-customs-icon.png", alt: "Licensed Customs House Agent (CHA) Services" },
+    { src: "https://www.kireeticonsultants.com/img/services-icons/about-taxation-icon.png", alt: "Corporate GST & Income Tax Advisory" }
   ];
 
   return (
@@ -68,14 +68,14 @@ export default function About() {
 
           {/* Right Circular Illustrations Column */}
           <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none w-full">
-            {illustrations.map((src, idx) => (
+            {illustrations.map((item, idx) => (
               <div
                 key={idx}
                 className="w-full max-w-[200px] sm:max-w-[220px] aspect-square bg-blue-50 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 rounded-full flex items-center justify-center mx-auto overflow-hidden border border-blue-100/50 p-2"
               >
                 <img
-                  src={src}
-                  alt={`Domain Illustration ${idx + 1}`}
+                  src={item.src}
+                  alt={item.alt}
                   className="w-[90%] h-[90%] object-contain rounded-full"
                 />
               </div>

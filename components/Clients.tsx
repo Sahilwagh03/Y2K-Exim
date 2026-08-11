@@ -66,6 +66,16 @@ export default function Clients() {
     "https://www.kireeticonsultants.com/img/newclients/appl.png"
   ];
 
+  const getClientAlt = (url: string) => {
+    try {
+      const filename = url.split("/").pop() || "";
+      const name = filename.split(".")[0].replace(/%20/g, " ").replace(/[-_]/g, " ");
+      return `${name.charAt(0).toUpperCase() + name.slice(1)} Client Logo`;
+    } catch {
+      return "Y2K Exim Corporate Client Logo";
+    }
+  };
+
   return (
     <section id="clients" className="py-16 bg-white overflow-hidden select-none relative">
       <div className="w-full px-6">
@@ -90,7 +100,7 @@ export default function Clients() {
               >
                 <img
                   src={src}
-                  alt={`Client Logo ${idx + 1}`}
+                  alt={getClientAlt(src)}
                   className="max-h-full max-w-full object-contain block"
                   loading="lazy"
                 />
@@ -109,7 +119,7 @@ export default function Clients() {
               >
                 <img
                   src={src}
-                  alt={`Client Logo ${idx + 1}`}
+                  alt={getClientAlt(src)}
                   className="max-h-full max-w-full object-contain block"
                   loading="lazy"
                 />
