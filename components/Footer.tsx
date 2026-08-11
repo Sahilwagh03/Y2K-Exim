@@ -179,9 +179,9 @@ export default function Footer() {
       >
         <div className="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg">
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg"
+            src="/img/whatsapp.svg"
             alt="WhatsApp Icon"
-            className="w-7 h-7 invert"
+            className="w-7 h-7"
           />
         </div>
       </a>
