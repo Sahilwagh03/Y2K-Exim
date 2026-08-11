@@ -24,7 +24,7 @@ export const organizationSchema = {
       "name": "Y2k Exim Indenting and Services Pvt Ltd",
       "alternateName": "Y2K Exim",
       "url": "https://www.y2kexim.com",
-      "logo": "https://www.y2kexim.com/img/y2k-logo.jpg",
+      "logo": "https://www.y2kexim.com/img/y2k-logo.webp",
       "description": "Premier DGFT Consultants, Licensed Customs House Agent (CHA), Corporate Tax Consultants & Industrial Subsidy Advisors in India.",
       "telephone": "+91-7774988189",
       "email": "info@y2kexim.com",
@@ -44,7 +44,7 @@ export const organizationSchema = {
       "telephone": "+91-7774988189",
       "email": "info@y2kexim.com",
       "priceRange": "$$",
-      "image": "https://www.y2kexim.com/img/y2k-logo.jpg",
+      "image": "https://www.y2kexim.com/img/y2k-logo.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "A-135, A-Wing, Balaji Bhavan, Near Railway Stn, Belapur",

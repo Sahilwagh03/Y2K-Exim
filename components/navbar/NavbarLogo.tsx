@@ -12,7 +12,7 @@ export default function NavbarLogo({ size = "desktop" }: NavbarLogoProps) {
   return (
     <a href="/" className={`flex items-center flex-shrink-0 gap-3 ${isDesktop ? "" : "mm-logo"}`}>
       <img
-        src="/img/y2k-logo.jpg"
+        src="/img/y2k-logo.webp"
         alt="Y2K Exim Logo"
         className={`object-cover rounded-full border border-white/20 shadow-sm ${isDesktop ? "h-11 w-11" : "h-9 w-9"}`}
       />

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Leading EXIM, DGFT Licensing, Customs House Agent (CHA), GST, and Industrial Subsidy consultants serving clients across India.",
     images: [
       {
-        url: "/img/y2k-logo.jpg",
+        url: "/img/y2k-logo.webp",
         width: 800,
         height: 800,
         alt: "Y2K Exim Services Pvt Ltd Logo",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "Y2K Exim Services | Top DGFT Consultants, CA, Customs & Subsidies India",
     description:
       "Leading EXIM, DGFT Licensing, Customs House Agent (CHA), GST, and Industrial Subsidy consultants serving clients across India.",
-    images: ["/img/y2k-logo.jpg"],
+    images: ["/img/y2k-logo.webp"],
     creator: "@y2kexim",
   },
   robots: {
@@ -84,9 +84,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/img/y2k-logo.jpg",
-    shortcut: "/img/y2k-logo.jpg",
-    apple: "/img/y2k-logo.jpg",
+    icon: "/img/y2k-logo.webp",
+    shortcut: "/img/y2k-logo.webp",
+    apple: "/img/y2k-logo.webp",
   },
 };
 
@@ -101,6 +101,7 @@ export default function RootLayout({
       className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}
     >
       <head>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"

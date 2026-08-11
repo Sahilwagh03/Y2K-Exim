@@ -45,7 +45,7 @@ export default function Footer() {
               <h3 className="text-white font-bold text-lg mb-3 tracking-wide">
                 About Us
               </h3>
-              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white bg-[length:200%_100%] animate-kc-shimmer rounded-full mb-5"></div>
+              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <p className="text-sm leading-relaxed text-orange-50 max-w-xs">
                 Y2k Exim simplifies DGFT, Subsidy, and Customs for global trade. Trusted for over 28 years in compliance and export-import solutions.
               </p>
@@ -77,7 +77,7 @@ export default function Footer() {
               <h3 className="text-white font-bold text-lg mb-3 tracking-wide">
                 Quick Links
               </h3>
-              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white bg-[length:200%_100%] animate-kc-shimmer rounded-full mb-5"></div>
+              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <ul className="list-none p-0 m-0 space-y-2.5 text-sm text-orange-100">
                 {[
                   { text: "Home", link: "/" },
@@ -103,7 +103,7 @@ export default function Footer() {
               <h3 className="text-white font-bold text-lg mb-3 tracking-wide">
                 Contact Us
               </h3>
-              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white bg-[length:200%_100%] animate-kc-shimmer rounded-full mb-5"></div>
+              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <div className="space-y-3.5 text-sm text-orange-100 text-left">
                 <div className="flex items-start gap-3">
                   <i className="fas fa-map-marker-alt text-white mt-1 w-4 text-center flex-shrink-0"></i>
@@ -133,7 +133,7 @@ export default function Footer() {
               <h3 className="text-white font-bold text-lg mb-3 tracking-wide">
                 Find Us
               </h3>
-              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white bg-[length:200%_100%] animate-kc-shimmer rounded-full mb-5"></div>
+              <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <div className="w-full h-[200px] rounded-xl overflow-hidden border border-white/20 shadow-sm relative bg-orange-700/30">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.396556102717!2d72.8340621759458!3d18.946327354388836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce20c4368205%3A0x673c683b5192131b!2sHimalaya%20House%2C%2079%2C%20Palton%20Rd%2C%20Crawford%20Market%2C%20Fort%2C%20Mumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1722864000000!5m2!1sen!2sin"
