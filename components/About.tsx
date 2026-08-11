@@ -20,10 +20,10 @@ export default function About() {
   ];
 
   const illustrations = [
-    { src: "/img/services-icons/dgft-icon (1).png", alt: "DGFT Licensing & EXIM Compliance Consultancy" },
-    { src: "/img/services-icons/about-subsidy-icon (1).png", alt: "Industrial & Agricultural Subsidies Advisory" },
-    { src: "/img/services-icons/about-customs-icon.png", alt: "Licensed Customs House Agent (CHA) Services" },
-    { src: "/img/services-icons/about-taxation-icon.png", alt: "Corporate GST & Income Tax Advisory" }
+    { src: "/img/services-icons/dgft-icon (1).webp", alt: "DGFT Licensing & EXIM Compliance Consultancy" },
+    { src: "/img/services-icons/about-subsidy-icon (1).webp", alt: "Industrial & Agricultural Subsidies Advisory" },
+    { src: "/img/services-icons/about-customs-icon.webp", alt: "Licensed Customs House Agent (CHA) Services" },
+    { src: "/img/services-icons/about-taxation-icon.webp", alt: "Corporate GST & Income Tax Advisory" }
   ];
 
   return (

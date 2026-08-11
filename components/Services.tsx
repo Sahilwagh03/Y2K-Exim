@@ -3,28 +3,28 @@ import React from "react";
 export default function Services() {
   const services = [
     {
-      icon: "/img/services-icons/dgft-icon.png",
+      icon: "/img/services-icons/dgft-icon.webp",
       title: "DGFT Services",
       text: "Expert assistance with all DGFT-related documentation and compliance for smooth import and export operations.",
       link: "/dgft-consultants",
       actionText: "Explore DGFT Consultancy",
     },
     {
-      icon: "/img/services-icons/subsidy-icon.png",
+      icon: "/img/services-icons/subsidy-icon.webp",
       title: "Industrial Subsidies",
       text: "Accurate guidance on eligibility, documentation, and claim processes for industrial subsidies and incentives.",
       link: "/industrial-subsidies",
       actionText: "Discover Industrial Subsidies",
     },
     {
-      icon: "/img/services-icons/customs-icon.png",
+      icon: "/img/services-icons/customs-icon.webp",
       title: "Customs & Shipping",
       text: "End-to-end customs solutions including clearance, documentation, and compliance for seamless cross-border trade.",
       link: "/Customs-House-Agent-Services",
       actionText: "View Customs House Agent Services",
     },
     {
-      icon: "/img/services-icons/gst-icon.png",
+      icon: "/img/services-icons/gst-icon.webp",
       title: "Taxation",
       text: "Ensuring your trade operations comply with all GST regulations and related tax requirements for seamless compliance.",
       link: "/Taxation",
