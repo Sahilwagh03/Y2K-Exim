@@ -2,68 +2,68 @@ import React from "react";
 
 export default function Clients() {
   const row1Logos = [
-    "https://www.kireeticonsultants.com/img/newclients/blueenergybuild.png",
-    "https://www.kireeticonsultants.com/img/newclients/Bromine.png",
-    "https://www.kireeticonsultants.com/img/newclients/itek.png",
-    "https://www.kireeticonsultants.com/img/newclients/jsw.png",
-    "https://www.kireeticonsultants.com/img/newclients/lenovo.png",
-    "https://www.kireeticonsultants.com/img/newclients/poshan.png",
-    "https://www.kireeticonsultants.com/img/newclients/samhi.png",
-    "https://www.kireeticonsultants.com/img/newclients/stellarises.png",
-    "https://www.kireeticonsultants.com/img/newclients/sumeet.png",
-    "https://www.kireeticonsultants.com/img/newclients/techeco.png",
-    "https://www.kireeticonsultants.com/img/newclients/tungabhadraethonal.png",
-    "https://www.kireeticonsultants.com/img/newclients/vetogen.png",
-    "https://www.kireeticonsultants.com/img/client/1.png",
-    "https://www.kireeticonsultants.com/img/client/3.png",
-    "https://www.kireeticonsultants.com/img/client/4.png",
-    "https://www.kireeticonsultants.com/img/client/5.png",
-    "https://www.kireeticonsultants.com/img/client/12.png",
-    "https://www.kireeticonsultants.com/img/client/13.png",
-    "https://www.kireeticonsultants.com/img/client/14.png",
-    "https://www.kireeticonsultants.com/img/client/15.png",
-    "https://www.kireeticonsultants.com/img/client/16.png",
-    "https://www.kireeticonsultants.com/img/client/18.png",
-    "https://www.kireeticonsultants.com/img/client/20.png",
-    "https://www.kireeticonsultants.com/img/client/22.png",
-    "https://www.kireeticonsultants.com/img/client/23.png",
-    "https://www.kireeticonsultants.com/img/client/26.png",
-    "https://www.kireeticonsultants.com/img/newclients/southasianceramic.png",
-    "https://www.kireeticonsultants.com/img/newclients/globalgreencompany.png",
-    "https://www.kireeticonsultants.com/img/newclients/smilax%20(1).png"
+    "/img/clients/blueenergybuild.png",
+    "/img/clients/Bromine.png",
+    "/img/clients/itek.png",
+    "/img/clients/jsw.png",
+    "/img/clients/lenovo.png",
+    "/img/clients/poshan.png",
+    "/img/clients/samhi.png",
+    "/img/clients/stellarises.png",
+    "/img/clients/sumeet.png",
+    "/img/clients/techeco.png",
+    "/img/clients/tungabhadraethonal.png",
+    "/img/clients/vetogen.png",
+    "/img/clients/1.png",
+    "/img/clients/3.png",
+    "/img/clients/4.png",
+    "/img/clients/5.png",
+    "/img/clients/12.png",
+    "/img/clients/13.png",
+    "/img/clients/14.png",
+    "/img/clients/15.png",
+    "/img/clients/16.png",
+    "/img/clients/18.png",
+    "/img/clients/20.png",
+    "/img/clients/22.png",
+    "/img/clients/23.png",
+    "/img/clients/26.png",
+    "/img/clients/southasianceramic.png",
+    "/img/clients/globalgreencompany.png",
+    "/img/clients/smilax (1).png"
   ];
 
   const row2Logos = [
-    "https://www.kireeticonsultants.com/img/newclients/baypark%20(1).png",
-    "https://www.kireeticonsultants.com/img/newclients/amararaja.png",
-    "https://www.kireeticonsultants.com/img/newclients/jayarajfortune.png",
-    "https://www.kireeticonsultants.com/img/client/sarala.png",
-    "https://www.kireeticonsultants.com/img/client/bhagyalakshmi1.jpg",
-    "https://www.kireeticonsultants.com/img/client/sats1.jpg",
-    "https://www.kireeticonsultants.com/img/client/adithya_birla.jpg",
-    "https://www.kireeticonsultants.com/img/client/27.png",
-    "https://www.kireeticonsultants.com/img/client/28.png",
-    "https://www.kireeticonsultants.com/img/newclients/shyamg.png",
-    "https://www.kireeticonsultants.com/img/newclients/wirelux.png",
-    "https://www.kireeticonsultants.com/img/newclients/zeel%20group.png",
-    "https://www.kireeticonsultants.com/img/newclients/Mitsubishi%20(1).png",
-    "https://www.kireeticonsultants.com/img/newclients/notofrire.png",
-    "https://www.kireeticonsultants.com/img/newclients/patabiagro.png",
-    "https://www.kireeticonsultants.com/img/newclients/photons.png",
-    "https://www.kireeticonsultants.com/img/newclients/rossenterprises.png",
-    "https://www.kireeticonsultants.com/img/newclients/Shreenathji.png",
-    "https://www.kireeticonsultants.com/img/newclients/lcare.png",
-    "https://www.kireeticonsultants.com/img/newclients/kashiv.png",
-    "https://www.kireeticonsultants.com/img/newclients/frick.png",
-    "https://www.kireeticonsultants.com/img/newclients/fairy.png",
-    "https://www.kireeticonsultants.com/img/newclients/delight.png",
-    "https://www.kireeticonsultants.com/img/newclients/d&g.png",
-    "https://www.kireeticonsultants.com/img/newclients/awp.png",
-    "https://www.kireeticonsultants.com/img/newclients/biosci.png",
-    "https://www.kireeticonsultants.com/img/newclients/advanceagrolife.png",
-    "https://www.kireeticonsultants.com/img/newclients/aloe.png",
-    "https://www.kireeticonsultants.com/img/newclients/amino.png",
-    "https://www.kireeticonsultants.com/img/newclients/appl.png"
+    "/img/clients/baypark (1).png",
+    "/img/clients/amararaja.png",
+    "/img/clients/jayarajfortune.png",
+    "/img/clients/sarala.png",
+    "/img/clients/bhagyalakshmi1.jpg",
+    "/img/clients/sats1.jpg",
+    "/img/clients/adithya_birla.jpg",
+    "/img/clients/27.png",
+    "/img/clients/28.png",
+    "/img/clients/shyamg.png",
+    "/img/clients/wirelux.png",
+    "/img/clients/zeel group.png",
+    "/img/clients/Mitsubishi (1).png",
+    "/img/clients/notofrire.png",
+    "/img/clients/patabiagro.png",
+    "/img/clients/photons.png",
+    "/img/clients/rossenterprises.png",
+    "/img/clients/Shreenathji.png",
+    "/img/clients/lcare.png",
+    "/img/clients/kashiv.png",
+    "/img/clients/frick.png",
+    "/img/clients/fairy.png",
+    "/img/clients/delight.png",
+    "/img/clients/d&g.png",
+    "/img/clients/awp.png",
+    "/img/clients/biosci.png",
+    "/img/clients/advanceagrolife.png",
+    "/img/clients/aloe.png",
+    "/img/clients/amino.png",
+    "/img/clients/appl.png"
   ];
 
   const getClientAlt = (url: string) => {
@@ -84,8 +84,8 @@ export default function Clients() {
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-display">
             Our Clients
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-kc-orange mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
             Trusted by leading companies across industries
           </p>
         </div>
@@ -96,7 +96,7 @@ export default function Clients() {
             {[...row1Logos, ...row1Logos].map((src, idx) => (
               <div
                 key={idx}
-                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08]"
+                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/60 rounded-xl border border-slate-100 p-2"
               >
                 <img
                   src={src}
@@ -115,7 +115,7 @@ export default function Clients() {
             {[...row2Logos, ...row2Logos].map((src, idx) => (
               <div
                 key={idx}
-                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08]"
+                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/60 rounded-xl border border-slate-100 p-2"
               >
                 <img
                   src={src}
