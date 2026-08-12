@@ -33,7 +33,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 bg-white select-none">
+    <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">

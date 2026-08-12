@@ -68,7 +68,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-slate-50 overflow-hidden select-none relative">
+    <section id="testimonials" className="py-20 bg-slate-50 overflow-hidden relative">
       <div className="w-full px-6 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-10">

@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-us"
-      className="py-20 bg-gradient-to-tr from-orange-50 via-orange-100/40 to-orange-200/20 text-kc-navy-950 relative overflow-hidden select-none"
+      className="py-20 bg-gradient-to-tr from-orange-50 via-orange-100/40 to-orange-200/20 text-kc-navy-950 relative overflow-hidden"
     >
       {/* Decorative blur graphics like the footer but light orange */}
       <div className="absolute w-[380px] h-[380px] rounded-full bg-orange-200/30 blur-[100px] top-[-120px] left-[-100px] pointer-events-none z-0"></div>

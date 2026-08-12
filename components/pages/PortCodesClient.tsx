@@ -10,7 +10,19 @@ import PortCodesTable from "@/components/port-codes/PortCodesTable";
 import PortCodesPagination from "@/components/port-codes/PortCodesPagination";
 import PortCodesInfoGuide from "@/components/port-codes/PortCodesInfoGuide";
 
-export default function PortCodesClient() {
+export interface PortCodesClientProps {
+  showHeader?: boolean;
+  showInfoGuide?: boolean;
+  hideInfoGuide?: boolean;
+  isEmbedded?: boolean;
+}
+
+export default function PortCodesClient({
+  showHeader = true,
+  showInfoGuide = true,
+  hideInfoGuide = false,
+  isEmbedded = false,
+}: PortCodesClientProps) {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedState, setSelectedState] = useState<string>("All");
   const [selectedType, setSelectedType] = useState<string>("All");
@@ -97,49 +109,74 @@ export default function PortCodesClient() {
     setSelectedZone("All");
   };
 
-  return (
-    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
-      <PortCodesHeader />
+  const shouldDisplayInfoGuide = showInfoGuide && !hideInfoGuide;
 
-      <main className="max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 space-y-8">
-        <PortCodesMetrics stats={stats} />
+  const content = (
+    <div className="space-y-8">
+      {(!showHeader || isEmbedded) && (
+        <div id="customs-port-codes" className="border-b border-slate-200 pb-3.5 mt-10">
+          <h2 className="text-2xl md:text-3xl font-extrabold font-display text-gray-950 flex items-center gap-3">
+            <span className="w-10 h-10 rounded-xl bg-orange-50 border border-orange-100/60 flex items-center justify-center text-kc-orange">
+              <i className="fas fa-compass text-base"></i>
+            </span>
+            Indian Customs Port Codes Directory (412 Locations)
+          </h2>
+          <p className="text-gray-500 text-xs md:text-sm mt-1 font-medium">
+            Searchable ICEGATE EDI directory of 412 official Indian Customs Ports, Airports (ACC), Inland Container Depots (ICD), and Container Freight Stations (CFS).
+          </p>
+        </div>
+      )}
 
-        <PortCodesFilters
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          selectedState={selectedState}
-          setSelectedState={setSelectedState}
-          selectedType={selectedType}
-          setSelectedType={setSelectedType}
-          selectedZone={selectedZone}
-          setSelectedZone={setSelectedZone}
-          pageSize={pageSize}
-          setPageSize={setPageSize}
-          uniqueStates={uniqueStates}
-          uniqueTypes={uniqueTypes}
-          uniqueZones={uniqueZones}
-          totalRecords={portCodesData.length}
-          filteredCount={filteredData.length}
-          copiedCode={copiedCode}
+      <PortCodesMetrics stats={stats} />
+
+      <PortCodesFilters
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        selectedState={selectedState}
+        setSelectedState={setSelectedState}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
+        selectedZone={selectedZone}
+        setSelectedZone={setSelectedZone}
+        pageSize={pageSize}
+        setPageSize={setPageSize}
+        uniqueStates={uniqueStates}
+        uniqueTypes={uniqueTypes}
+        uniqueZones={uniqueZones}
+        totalRecords={portCodesData.length}
+        filteredCount={filteredData.length}
+        copiedCode={copiedCode}
+        onResetFilters={handleResetFilters}
+      />
+
+      <div className="space-y-0">
+        <PortCodesTable
+          displayedData={displayedData}
+          onCopyCode={handleCopyCode}
           onResetFilters={handleResetFilters}
         />
 
-        <div className="space-y-0">
-          <PortCodesTable
-            displayedData={displayedData}
-            onCopyCode={handleCopyCode}
-            onResetFilters={handleResetFilters}
-          />
+        <PortCodesPagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          pageSize={pageSize}
+          onPageChange={setCurrentPage}
+        />
+      </div>
 
-          <PortCodesPagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            pageSize={pageSize}
-            onPageChange={setCurrentPage}
-          />
-        </div>
+      {shouldDisplayInfoGuide && <PortCodesInfoGuide />}
+    </div>
+  );
 
-        <PortCodesInfoGuide />
+  if (!showHeader || isEmbedded) {
+    return content;
+  }
+
+  return (
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans pb-20">
+      <PortCodesHeader />
+      <main className="max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8">
+        {content}
       </main>
     </div>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { COMPANY_CONTACT } from "@/constants/contact";
 
 interface BranchData {
   id: string;
@@ -18,49 +19,69 @@ export default function Branches() {
     {
       id: "mumbai",
       name: "Mumbai",
-      title: "Mumbai Office",
-      address: "-135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614",
-      phones: ["+91-7774988189"],
-      email: "pramod@y2kexim.com",
-      hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      mapUrl: "https://maps.google.com/maps?q=-135,%20A%20%E2%80%93%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20stn.%20Belapur%20Navi%20Mumbai.%20-%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      title: "Mumbai (Head Office)",
+      address: COMPANY_CONTACT.headOfficeAddress,
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=150-A%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20Station,%20Belapur,%20Navi%20Mumbai%20%E2%80%93%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
-      id: "gujarat",
-      name: "Gujarat",
-      title: "Gujarat Office",
-      address: "115, Manali Tower, Oslo Road , Gandhidham (Kutch), Gujrat -370201.",
-      phones: ["+91-7774988189"],
-      email: "pramod@y2kexim.com",
-      hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      mapUrl: "https://maps.google.com/maps?q=115,%20Manali%20Tower,%20Oslo%20Road%20,%20Gandhidham%20(Kutch),%20Gujrat%20-370201.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      id: "delhi-gurgaon",
+      name: "Delhi / Gurgaon",
+      title: "Delhi / Gurgaon Office",
+      address: "C4/C, Clear View, South City, Old DLF Colony, Sec 14, Gurugram, HR – 122001",
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=C4/C,%20Clear%20View,%20South%20City,%20Old%20DLF%20Colony,%20Sec%2014,%20Gurugram,%20HR%20%E2%80%93%20122001&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
-      id: "chennai",
-      name: "Chennai",
-      title: "Chennai Office",
-      address: "130, Mint Street, 4th Floor, Shree Center, Sowcarpet, Chennai -600079.",
-      phones: ["+91-7774988189"],
-      email: "pramod@y2kexim.com",
-      hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      mapUrl: "https://maps.google.com/maps?q=130,%20Mint%20Street,%204th%20Floor,%20Shree%20Center,%20Sowcarpet,%20Chennai%20-600079.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      id: "dadri",
+      name: "Dadri ICD",
+      title: "Dadri ICD Office",
+      address: "Room No. 11, CMA CGM, Tilpata, Dadri",
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=Room%20No.%2011,%20CMA%20CGM,%20Tilpata,%20Dadri&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: "kolkata",
       name: "Kolkata",
       title: "Kolkata Office",
-      address: "15/1, Strand Road, Custom House, Kolkata - 700001.",
-      phones: ["+91-7774988189"],
-      email: "pramod@y2kexim.com",
-      hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      mapUrl: "https://maps.google.com/maps?q=15/1,%20Strand%20Road,%20Custom%20House,%20Kolkata%20-%20700001.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      address: "21, “SWAPNA LOK”, Rammohan Estate, Block – B, Madhyamgram, Kolkata – 700129",
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=21,%E2%80%9CSWAPNA%20LOK%E2%80%9D,%20Rammohan%20Estate,%20Block%20%E2%80%93%20B,%20Madhyamgram,%20Kolkata%20%E2%80%93%20700129&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      id: "gujarat",
+      name: "Gujarat",
+      title: "Gujarat Office",
+      address: "115, Manali Tower, Oslo Road, Gandhidham (Kutch), Gujarat – 370201",
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=115,%20Manali%20Tower,%20Oslo%20Road,%20Gandhidham%20(Kutch),%20Gujarat%20%E2%80%93%20370201&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      id: "chennai",
+      name: "Chennai",
+      title: "Chennai Office",
+      address: "130, Mint Street, 4th Floor, Shree Center, Sowcarpet, Chennai – 600079",
+      phones: [COMPANY_CONTACT.phoneRaw],
+      email: COMPANY_CONTACT.email,
+      hours: COMPANY_CONTACT.workingHours,
+      mapUrl: "https://maps.google.com/maps?q=130,%20Mint%20Street,%204th%20Floor,%20Shree%20Center,%20Sowcarpet,%20Chennai%20%E2%80%93%20600079&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   ];
 
   const [activeBranch, setActiveBranch] = useState<BranchData>(branches[0]);
 
   return (
-    <section id="branches" className="py-16 bg-gray-50 select-none">
+    <section id="branches" className="py-16 bg-gray-50">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">

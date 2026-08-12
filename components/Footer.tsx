@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { COMPANY_CONTACT } from "@/constants/contact";
 
 export default function Footer() {
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
@@ -30,7 +32,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="relative w-full bg-[#ea580c] select-none">
+    <div className="relative w-full bg-[#ea580c]">
       {/* Spacer and fly-away panel container */}
       <div className="relative z-10 bg-gradient-to-tr from-[#ea580c] via-[#f97316] to-[#ea580c] text-white overflow-hidden border-t border-orange-600">
         {/* Decorative blur graphics */}
@@ -85,18 +87,46 @@ export default function Footer() {
                   { text: "Services", link: "/dgft-consultants" },
                   { text: "Port Codes Directory", link: "/customs-port-codes" },
                   { text: "Contact Us", link: "/contact-us" },
-                  { text: "Privacy Policy", link: "/policy" }
+                  { text: "Privacy Policy", link: "/policy" },
+                  { text: "Terms & Conditions", link: "/terms-and-conditions" }
                 ].map((item, i) => (
                   <li key={i}>
-                    <a
+                    <Link
                       href={item.link}
                       className="hover:text-white hover:pl-1 transition-all duration-200 block font-medium"
                     >
                       {item.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
+
+              {/* Associated Websites */}
+              <div className="mt-4 pt-3 border-t border-white/20 w-full text-left">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-white block mb-2">
+                  Our Associated Portals
+                </span>
+                <div className="flex flex-col space-y-1.5 text-xs text-orange-100 font-medium">
+                  <Link
+                    href={COMPANY_CONTACT.websites.customDutyRefund}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline flex items-center gap-1.5"
+                  >
+                    <i className="fas fa-globe text-[10px] text-orange-200"></i>
+                    <span>www.customdutyrefund.com</span>
+                  </Link>
+                  <Link
+                    href={COMPANY_CONTACT.websites.gstRefundIndia}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline flex items-center gap-1.5"
+                  >
+                    <i className="fas fa-globe text-[10px] text-orange-200"></i>
+                    <span>www.gstrefundindia.com</span>
+                  </Link>
+                </div>
+              </div>
             </div>
 
             {/* Column 3: Contact Info */}
@@ -109,21 +139,25 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <i className="fas fa-map-marker-alt text-white mt-1 w-4 text-center flex-shrink-0"></i>
                   <p className="leading-relaxed">
-                    -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
+                    {COMPANY_CONTACT.headOfficeAddress}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-phone-alt text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="font-medium">+91 77749 88189</p>
+                  <Link href={COMPANY_CONTACT.tel} className="font-medium hover:text-white hover:underline">
+                    {COMPANY_CONTACT.phone}
+                  </Link>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="fas fa-envelope text-white w-4 text-center flex-shrink-0"></i>
-                  <p className="break-all font-medium">info@y2kexim.com</p>
+                  <Link href={COMPANY_CONTACT.mailto} className="break-all font-medium hover:text-white hover:underline">
+                    {COMPANY_CONTACT.email}
+                  </Link>
                 </div>
                 <div className="flex items-center gap-3 pt-1 border-t border-orange-400">
                   <i className="fas fa-clock text-white w-4 text-center flex-shrink-0"></i>
                   <p className="text-xs uppercase tracking-wider font-semibold">
-                    Mon - Sat: 9:30 AM - 6:30 PM
+                    {COMPANY_CONTACT.workingHours}
                   </p>
                 </div>
               </div>
@@ -137,7 +171,7 @@ export default function Footer() {
               <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <div className="w-full h-[200px] rounded-xl overflow-hidden border border-white/20 shadow-sm relative bg-orange-700/30">
                 <iframe
-                  src="https://maps.google.com/maps?q=-135,%20A%20%E2%80%93%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20stn.%20Belapur%20Navi%20Mumbai.%20-%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=150-A%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20Station,%20Belapur,%20Navi%20Mumbai%20%E2%80%93%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   className="absolute top-0 left-0 w-full h-full border-none"
                   allowFullScreen
                   loading="lazy"
@@ -171,8 +205,8 @@ export default function Footer() {
       </button>
 
       {/* WhatsApp Floating Chat */}
-      <a
-        href="https://wa.me/917774988189"
+      <Link
+        href={COMPANY_CONTACT.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-12 left-6 z-[999] hover:scale-105 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 block"
@@ -185,17 +219,17 @@ export default function Footer() {
             className="w-7 h-7"
           />
         </div>
-      </a>
+      </Link>
 
       {/* Sticky Enquiry Sidebar Button */}
-      <a
+      <Link
         href="/contact-us"
         target="_blank"
         rel="noopener noreferrer"
         className="enquire-sidebar font-semibold text-xs tracking-wider"
       >
         ENQUIRE NOW
-      </a>
+      </Link>
     </div>
   );
 }

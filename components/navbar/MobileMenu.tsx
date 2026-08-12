@@ -53,7 +53,7 @@ export default function MobileMenu({ items, searchOpen, setSearchOpen }: MobileM
 
       {/* Collapsible Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="bg-kc-navy-900 border-t border-white/10 max-h-[calc(100vh-68px)] overflow-y-auto w-full select-none pb-8 shadow-inner animate-popup-fade">
+        <div className="bg-kc-navy-900 border-t border-white/10 max-h-[calc(100vh-68px)] overflow-y-auto w-full pb-8 shadow-inner animate-popup-fade">
           <ul className="list-none m-0 p-0">
             {items.map((item, idx) => {
               if (item.type === "link") {

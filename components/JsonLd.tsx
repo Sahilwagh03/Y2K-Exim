@@ -1,4 +1,5 @@
 import React from "react";
+import { COMPANY_CONTACT } from "@/constants/contact";
 
 interface JsonLdProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -26,28 +27,28 @@ export const organizationSchema = {
       "url": "https://www.y2kexim.com",
       "logo": "https://www.y2kexim.com/img/y2k-logo.webp",
       "description": "Premier DGFT Consultants, Licensed Customs House Agent (CHA), Corporate Tax Consultants & Industrial Subsidy Advisors in India.",
-      "telephone": "+91-7774988189",
-      "email": "info@y2kexim.com",
+      "telephone": COMPANY_CONTACT.phoneRaw,
+      "email": COMPANY_CONTACT.email,
       "sameAs": [
-        "https://www.facebook.com/y2kexim",
-        "https://x.com/y2kexim",
-        "https://www.instagram.com/y2keximofficial",
-        "https://www.linkedin.com/in/y2k-exim-0b9b25423",
-        "https://www.youtube.com/@y2kexim"
+        COMPANY_CONTACT.social.facebook,
+        COMPANY_CONTACT.social.twitter,
+        COMPANY_CONTACT.social.instagram,
+        COMPANY_CONTACT.social.linkedin,
+        COMPANY_CONTACT.social.youtube
       ]
     },
     {
       "@type": "LocalBusiness",
       "@id": "https://www.y2kexim.com/#localbusiness-mumbai",
       "name": "Y2K Exim Services - Head Office Navi Mumbai",
-      "url": "https://www.y2kexim.com",
-      "telephone": "+91-7774988189",
-      "email": "info@y2kexim.com",
+      "url": COMPANY_CONTACT.websites.main,
+      "telephone": COMPANY_CONTACT.phoneRaw,
+      "email": COMPANY_CONTACT.email,
       "priceRange": "$$",
       "image": "https://www.y2kexim.com/img/y2k-logo.webp",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "A-135, A-Wing, Balaji Bhavan, Near Railway Stn, Belapur",
+        "streetAddress": "150-A Wing, Balaji Bhavan, Near Railway Station, Belapur",
         "addressLocality": "Navi Mumbai",
         "addressRegion": "Maharashtra",
         "postalCode": "400614",
@@ -71,16 +72,45 @@ export const organizationSchema = {
     },
     {
       "@type": "LocalBusiness",
+      "@id": "https://www.y2kexim.com/#localbusiness-delhi-gurgaon",
+      "name": "Y2K Exim Services - Delhi / Gurgaon Branch",
+      "url": "https://www.y2kexim.com/contact-us",
+      "telephone": COMPANY_CONTACT.phoneRaw,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C4/C, Clear View, South City, Old DLF Colony, Sec 14",
+        "addressLocality": "Gurugram",
+        "addressRegion": "Haryana",
+        "postalCode": "122001",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.y2kexim.com/#localbusiness-dadri",
+      "name": "Y2K Exim Services - Dadri ICD Branch",
+      "url": "https://www.y2kexim.com/contact-us",
+      "telephone": COMPANY_CONTACT.phoneRaw,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Room No. 11, CMA CGM, Tilpata",
+        "addressLocality": "Dadri",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
       "@id": "https://www.y2kexim.com/#localbusiness-gujarat",
       "name": "Y2K Exim Services - Gujarat Branch",
       "url": "https://www.y2kexim.com/contact-us",
-      "telephone": "+91-7774988189",
+      "telephone": COMPANY_CONTACT.phoneRaw,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Office 912-B, 9th Floor, Sun West Bank, Opp City Gold Cinema, Ashram Road",
-        "addressLocality": "Ahmedabad",
+        "streetAddress": "115, Manali Tower, Oslo Road, Gandhidham (Kutch)",
+        "addressLocality": "Gandhidham",
         "addressRegion": "Gujarat",
-        "postalCode": "380009",
+        "postalCode": "370201",
         "addressCountry": "IN"
       }
     },
@@ -89,13 +119,13 @@ export const organizationSchema = {
       "@id": "https://www.y2kexim.com/#localbusiness-chennai",
       "name": "Y2K Exim Services - Chennai Branch",
       "url": "https://www.y2kexim.com/contact-us",
-      "telephone": "+91-7774988189",
+      "telephone": COMPANY_CONTACT.phoneRaw,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Office No 37/6, Alagiri Nagar, 5th Street, 100 Ft Road, Vadapalani",
+        "streetAddress": "130, Mint Street, 4th Floor, Shree Center, Sowcarpet",
         "addressLocality": "Chennai",
         "addressRegion": "Tamil Nadu",
-        "postalCode": "600026",
+        "postalCode": "600079",
         "addressCountry": "IN"
       }
     },
@@ -104,13 +134,13 @@ export const organizationSchema = {
       "@id": "https://www.y2kexim.com/#localbusiness-kolkata",
       "name": "Y2K Exim Services - Kolkata Branch",
       "url": "https://www.y2kexim.com/contact-us",
-      "telephone": "+91-7774988189",
+      "telephone": COMPANY_CONTACT.phoneRaw,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Office No 3B Ground Floor, Premises No.79, Commercial Point, Lenin Sarani, P S Taltala",
+        "streetAddress": "21, SWAPNA LOK, Rammohan Estate, Block - B, Madhyamgram",
         "addressLocality": "Kolkata",
         "addressRegion": "West Bengal",
-        "postalCode": "700013",
+        "postalCode": "700129",
         "addressCountry": "IN"
       }
     }

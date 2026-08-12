@@ -16,7 +16,7 @@ export default function Marquee() {
   ];
 
   return (
-    <div className="bg-kc-orange text-white py-3 flex items-center overflow-hidden z-20 relative select-none">
+    <div className="bg-kc-orange text-white py-3 flex items-center overflow-hidden z-20 relative">
       <span className="font-semibold px-4 z-30 bg-kc-orange whitespace-nowrap flex items-center gap-1.5 shadow-[5px_0_15px_rgba(234,88,12,0.5)]">
         <span>🔔</span> Latest Updates:
       </span>

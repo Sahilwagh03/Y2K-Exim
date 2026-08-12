@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function PortCodesInfoGuide() {
+interface PortCodesInfoGuideProps {
+  hide?: boolean;
+  show?: boolean;
+}
+
+export default function PortCodesInfoGuide({ hide = false, show = true }: PortCodesInfoGuideProps) {
+  if (hide || !show) return null;
   return (
     <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-2xs space-y-6">
       <div className="flex items-center gap-3 border-b border-slate-100 pb-4">

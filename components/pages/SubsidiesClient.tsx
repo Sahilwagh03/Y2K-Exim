@@ -86,7 +86,7 @@ export default function SubsidiesClient() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans pb-20">
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/60 via-amber-50/30 to-slate-50/50 py-16 px-6 md:px-12 border-b border-orange-100/50">
         <div className="absolute inset-0 bg-radial-dots opacity-40 pointer-events-none"></div>
         <div className="absolute -top-40 right-10 w-[600px] h-[600px] bg-gradient-to-br from-orange-200/20 to-amber-200/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -150,7 +150,7 @@ export default function SubsidiesClient() {
 
                             <div
                               onClick={() => toggleCard(service.id)}
-                              className="p-5 md:p-6 cursor-pointer flex justify-between items-start gap-4 hover:bg-slate-50/20 transition-all select-none pl-6"
+                              className="p-5 md:p-6 cursor-pointer flex justify-between items-start gap-4 hover:bg-slate-50/20 transition-all pl-6"
                             >
                               <div className="space-y-2 flex-1">
                                 <div className="flex flex-wrap gap-2 items-center">

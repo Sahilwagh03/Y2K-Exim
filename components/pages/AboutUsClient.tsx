@@ -21,7 +21,7 @@ export default function AboutUsClient() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans pb-20">
       
       {/* Light Premium Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/60 via-amber-50/30 to-slate-50/50 py-20 px-6 md:px-12 border-b border-orange-100/50">

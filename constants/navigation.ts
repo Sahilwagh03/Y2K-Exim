@@ -135,7 +135,7 @@ export const navigationConfig: NavigationItem[] = [
     ]
   },
   {
-    label: "Subsidies",
+    label: "Industry & Subsidies",
     href: "/industrial-subsidies",
     type: "mega",
     widthClass: "w-[620px] max-w-[90vw]",

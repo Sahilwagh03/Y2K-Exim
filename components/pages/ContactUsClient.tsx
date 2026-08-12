@@ -1,6 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { COMPANY_CONTACT } from "@/constants/contact";
+import ContactForm from "@/components/ContactForm";
 
 interface BranchInfo {
   city: string;
@@ -12,38 +15,52 @@ interface BranchInfo {
 
 const branches: BranchInfo[] = [
   {
-    city: "Mumbai",
+    city: "Mumbai (Head Office)",
     icon: "fas fa-ship",
-    address: "-135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614",
-    phones: ["+91-7774988189"],
-    mapLink: "https://maps.app.goo.gl/JdvW9vjushM4Eh1h6"
+    address: COMPANY_CONTACT.headOfficeAddress,
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=150-A%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20Station,%20Belapur,%20Navi%20Mumbai%20%E2%80%93%20400614"
   },
   {
-    city: "Gujarat",
-    icon: "fas fa-industry",
-    address: "Office 912-B, 9th Floor, Sun West Bank, Opp City Gold Cinema, Ashram Road, Ahmedabad - 380 009 (GJ)",
-    phones: ["+91-7774988189"],
-    mapLink: "https://maps.app.goo.gl/83iJ9p3L7143PKCJ6"
+    city: "Delhi / Gurgaon",
+    icon: "fas fa-building",
+    address: "C4/C, Clear View, South City, Old DLF Colony, Sec 14, Gurugram, HR – 122001",
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=C4/C,%20Clear%20View,%20South%20City,%20Old%20DLF%20Colony,%20Sec%2014,%20Gurugram,%20HR%20%E2%80%93%20122001"
   },
   {
-    city: "Chennai",
-    icon: "fas fa-anchor",
-    address: "Office No 37/6, Alagiri Nagar, 5th Street, 100 Ft Road, Vadapalani, Chennai - 600 026 (TN)",
-    phones: ["+91-7774988189"],
-    mapLink: "https://maps.app.goo.gl/GqAGHBRGzB9DJh2G6"
+    city: "Dadri ICD",
+    icon: "fas fa-warehouse",
+    address: "Room No. 11, CMA CGM, Tilpata, Dadri",
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=Room%20No.%2011,%20CMA%20CGM,%20Tilpata,%20Dadri"
   },
   {
     city: "Kolkata",
     icon: "fas fa-bridge",
-    address: "Office No 3B Ground Floor, Premises No.79, Commercial Point, Lenin Sarani, P S Taltala, Kolkata - 700 013 (WB)",
-    phones: ["+91-7774988189"],
-    mapLink: "https://maps.app.goo.gl/VLurCtXhiLvZCst87"
+    address: "21, “SWAPNA LOK”, Rammohan Estate, Block – B, Madhyamgram, Kolkata – 700129",
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=21,%E2%80%9CSWAPNA%20LOK%E2%80%9D,%20Rammohan%20Estate,%20Block%20%E2%80%93%20B,%20Madhyamgram,%20Kolkata%20%E2%80%93%20700129"
+  },
+  {
+    city: "Gujarat",
+    icon: "fas fa-industry",
+    address: "115, Manali Tower, Oslo Road, Gandhidham (Kutch), Gujarat – 370201",
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=115,%20Manali%20Tower,%20Oslo%20Road,%20Gandhidham%20(Kutch),%20Gujarat%20%E2%80%93%20370201"
+  },
+  {
+    city: "Chennai",
+    icon: "fas fa-anchor",
+    address: "130, Mint Street, 4th Floor, Shree Center, Sowcarpet, Chennai – 600079",
+    phones: [COMPANY_CONTACT.phoneRaw],
+    mapLink: "https://maps.google.com/maps?q=130,%20Mint%20Street,%204th%20Floor,%20Shree%20Center,%20Sowcarpet,%20Chennai%20%E2%80%93%20600079"
   }
 ];
 
 export default function ContactUsClient() {
   return (
-    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans pb-20">
       {/* Light Premium Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/60 via-amber-50/30 to-slate-50/50 py-16 px-6 md:px-12 border-b border-orange-100/50">
         <div className="absolute inset-0 bg-radial-dots opacity-40 pointer-events-none"></div>
@@ -80,7 +97,7 @@ export default function ContactUsClient() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Our Location</h3>
               <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-medium">
-                -135, A – Wing, Balaji Bhavan, Near Railway stn. Belapur Navi Mumbai. - 400614
+                {COMPANY_CONTACT.headOfficeAddress}
               </p>
             </div>
 
@@ -91,9 +108,9 @@ export default function ContactUsClient() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Phone Number</h3>
               <div className="space-y-1 font-semibold">
-                <a href="tel:+917774988189" className="block text-gray-600 hover:text-kc-orange text-sm transition">
-                  +91 77749 88189
-                </a>
+                <Link href={COMPANY_CONTACT.tel} className="block text-gray-600 hover:text-kc-orange text-sm transition">
+                  {COMPANY_CONTACT.phone}
+                </Link>
               </div>
             </div>
 
@@ -104,10 +121,43 @@ export default function ContactUsClient() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Email Addresses</h3>
               <div className="space-y-1">
-                <a href="mailto:info@y2kexim.com" className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
-                  info@y2kexim.com
-                </a>
+                <Link href={COMPANY_CONTACT.mailto} className="block text-gray-600 hover:text-kc-orange font-semibold text-sm transition">
+                  {COMPANY_CONTACT.email}
+                </Link>
               </div>
+            </div>
+          </div>
+
+          {/* Associated Portals Row */}
+          <div className="mt-8 bg-gradient-to-r from-orange-500 via-orange-600 to-red-600 rounded-2xl p-6 text-white text-center shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3 text-left">
+              <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white shrink-0">
+                <i className="fas fa-globe text-xl text-white"></i>
+              </div>
+              <div>
+                <h4 className="text-base font-bold font-display text-white">Our Dedicated Portals</h4>
+                <p className="text-xs text-orange-100 font-medium">Specialized web platforms for Customs Duty and GST Refund processing</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href={COMPANY_CONTACT.websites.customDutyRefund}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-white text-kc-orange font-bold text-xs rounded-xl shadow-xs hover:bg-orange-50 transition flex items-center gap-1.5"
+              >
+                <span>www.customdutyrefund.com</span>
+                <i className="fas fa-external-link-alt text-[10px] text-kc-orange"></i>
+              </Link>
+              <Link
+                href={COMPANY_CONTACT.websites.gstRefundIndia}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-white text-kc-orange font-bold text-xs rounded-xl shadow-xs hover:bg-orange-50 transition flex items-center gap-1.5"
+              >
+                <span>www.gstrefundindia.com</span>
+                <i className="fas fa-external-link-alt text-[10px] text-kc-orange"></i>
+              </Link>
             </div>
           </div>
         </section>
@@ -138,18 +188,14 @@ export default function ContactUsClient() {
                     {b.address}
                   </p>
                 </div>
-                <a
-                  href={b.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-kc-orange hover:underline pt-3 border-t border-slate-200/80"
-                >
-                  <span>View Location Map</span>
-                  <i className="fas fa-arrow-right text-[10px]"></i>
-                </a>
               </div>
             ))}
           </div>
+        </section>
+
+        {/* Contact Form Section (Above Footer) */}
+        <section id="contact-form" className="pt-4">
+          <ContactForm />
         </section>
 
       </main>

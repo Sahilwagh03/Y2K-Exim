@@ -11,7 +11,7 @@ export default function SearchOverlay({ open, onClose }: SearchOverlayProps) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/75 flex justify-center items-center z-[99999] animate-popup-fade select-none">
+    <div className="fixed inset-0 bg-black/75 flex justify-center items-center z-[99999] animate-popup-fade">
       <div className="w-[900px] max-w-[90%] bg-white p-[30px] rounded-lg relative">
         {/* Close Search Button */}
         <button

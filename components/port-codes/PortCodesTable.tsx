@@ -17,7 +17,7 @@ export default function PortCodesTable({
     <div className="bg-white rounded-2xl border border-slate-200 shadow-2xs overflow-hidden">
       <div className="overflow-x-auto max-h-[680px] review-text-scrollbar">
         <table className="w-full text-left border-collapse">
-          <thead className="bg-slate-100 sticky top-0 z-20 border-b border-slate-200 text-xs font-extrabold uppercase tracking-wider text-gray-700 select-none">
+          <thead className="bg-slate-100 sticky top-0 z-20 border-b border-slate-200 text-xs font-extrabold uppercase tracking-wider text-gray-700">
             <tr>
               <th className="py-3.5 px-4 w-16 text-center">S.No.</th>
               <th className="py-3.5 px-4 w-32">Port Code</th>

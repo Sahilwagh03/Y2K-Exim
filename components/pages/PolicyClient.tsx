@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { COMPANY_CONTACT } from "@/constants/contact";
 
 export default function PolicyClient() {
   return (
-    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans select-none pb-20">
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans pb-20">
 
       {/* Light Premium Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/60 via-amber-50/30 to-slate-50/50 py-16 px-6 md:px-12 border-b border-orange-100/50">
@@ -95,8 +97,15 @@ export default function PolicyClient() {
               If you have any questions, clarifications, or concerns regarding your business documentation and privacy, please contact our administrative desk:
             </p>
             <p className="mt-2 text-xs md:text-sm">
-              Email: <a href="mailto:info@y2kexim.com" className="text-kc-orange hover:underline">info@y2kexim.com</a> <br />
-              Corporate Phone Desk: <a href="tel:+917774988189" className="text-kc-orange hover:underline">+91 77749 88189</a>
+              Email:{" "}
+              <Link href={COMPANY_CONTACT.mailto} className="text-kc-orange hover:underline">
+                {COMPANY_CONTACT.email}
+              </Link>
+              <br />
+              Phone:{" "}
+              <Link href={COMPANY_CONTACT.tel} className="text-kc-orange hover:underline">
+                {COMPANY_CONTACT.phone}
+              </Link>
             </p>
           </section>
 

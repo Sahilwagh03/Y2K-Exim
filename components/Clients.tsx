@@ -77,7 +77,7 @@ export default function Clients() {
   };
 
   return (
-    <section id="clients" className="py-16 bg-white overflow-hidden select-none relative">
+    <section id="clients" className="py-16 bg-white overflow-hidden relative">
       <div className="w-full px-6">
         {/* Heading */}
         <div className="text-center mb-12">
