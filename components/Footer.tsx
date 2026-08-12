@@ -83,6 +83,7 @@ export default function Footer() {
                   { text: "Home", link: "/" },
                   { text: "About Us", link: "/about-us" },
                   { text: "Services", link: "/dgft-consultants" },
+                  { text: "Port Codes Directory", link: "/customs-port-codes" },
                   { text: "Contact Us", link: "/contact-us" },
                   { text: "Privacy Policy", link: "/policy" }
                 ].map((item, i) => (
@@ -136,12 +137,12 @@ export default function Footer() {
               <div className="h-[3px] w-10 bg-gradient-to-r from-white via-amber-200 to-white rounded-full mb-5"></div>
               <div className="w-full h-[200px] rounded-xl overflow-hidden border border-white/20 shadow-sm relative bg-orange-700/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.396556102717!2d72.8340621759458!3d18.946327354388836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce20c4368205%3A0x673c683b5192131b!2sHimalaya%20House%2C%2079%2C%20Palton%20Rd%2C%20Crawford%20Market%2C%20Fort%2C%20Mumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1722864000000!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?q=-135,%20A%20%E2%80%93%20Wing,%20Balaji%20Bhavan,%20Near%20Railway%20stn.%20Belapur%20Navi%20Mumbai.%20-%20400614&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   className="absolute top-0 left-0 w-full h-full border-none"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Y2k Exim Head Office Location"
+                  title="Y2k Exim Head Office Location - Balaji Bhavan, Belapur"
                 ></iframe>
               </div>
             </div>

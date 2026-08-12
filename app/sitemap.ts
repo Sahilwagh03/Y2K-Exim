@@ -34,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [`${baseUrl}/img/y2k-logo.jpg`],
     },
     {
+      url: `${baseUrl}/customs-port-codes`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+      images: [`${baseUrl}/img/y2k-logo.jpg`],
+    },
+    {
       url: `${baseUrl}/industrial-subsidies`,
       lastModified: currentDate,
       changeFrequency: "weekly",

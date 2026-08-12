@@ -100,7 +100,7 @@ export default function TaxationClient() {
             GST & <span className="text-kc-orange">Income Tax Services Hub</span>
           </h1>
           <p className="text-gray-600 text-sm md:text-base max-w-3xl leading-relaxed font-medium">
-            Manage your GST compliance, Income Tax filing, corporate registrations, and advisory services. Our experienced team of Chartered Accountants, Tax Consultants, and financial professionals works together to deliver legal, accurate, and timely tax solutions across India.
+            Complete end-to-end GST Services (Registration, Returns, Refunds, Export GST, ITC, Notices, Appeals, Audits, E-Way Bill, E-Invoicing, & Advisory) alongside Income Tax & Business Compliance. Our experienced team of Chartered Accountants and Tax Consultants delivers fast, legal, and hassle-free solutions across India.
           </p>
         </div>
       </section>
@@ -191,7 +191,7 @@ export default function TaxationClient() {
                                   <div className="space-y-3 bg-white p-4.5 rounded-lg border border-slate-150 shadow-3xs">
                                     <h4 className="font-bold text-gray-800 text-xs flex items-center gap-2 border-b border-slate-100 pb-2">
                                       <i className="fas fa-check-double text-kc-orange text-[10px]"></i>
-                                      Scheme Guidelines & Benefits
+                                      {service.category === "GST" ? "Key Services & Scope Included" : "Scheme Guidelines & Benefits"}
                                     </h4>
                                     <ul className="space-y-2">
                                       {service.keyPoints.map((point, index) => (

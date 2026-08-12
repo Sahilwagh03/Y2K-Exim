@@ -249,6 +249,12 @@ export const navigationConfig: NavigationItem[] = [
               { label: "Redemption of Old Licence", href: "/Customs-House-Agent-Services#customs-redemption-of-old-licence" },
               { label: "Export IGST Errors (SB001-SB009)", href: "/Customs-House-Agent-Services#customs-igst-refund-errors" }
             ]
+          },
+          {
+            title: "Trade Tools",
+            links: [
+              { label: "Customs Port Codes Directory (412 Ports)", href: "/customs-port-codes" }
+            ]
           }
         ]
       }
@@ -258,56 +264,92 @@ export const navigationConfig: NavigationItem[] = [
     label: "GST & Tax Services",
     href: "/Taxation",
     type: "mega",
-    widthClass: "w-[820px] max-w-[92vw]",
+    widthClass: "w-[1280px] max-w-[96vw]",
     columns: [
       {
-        title: "GST Services",
+        title: "GST Core & Export",
         icon: "fas fa-receipt",
         groups: [
           {
-            title: "Core Filings & Refund",
+            title: "Registration & Filings",
             links: [
-              { label: "GST Registration", href: "/Taxation#gst-registration-certificate" },
-              { label: "GST Returns Filing", href: "/Taxation#gst-returns" },
-              { label: "Deemed Export Refund", href: "/Taxation#gst-refund-deemed-export" }
+              { label: "GST Registration Services", href: "/Taxation#gst-registration-services" },
+              { label: "GST Return Filing", href: "/Taxation#gst-return-filing" },
+              { label: "E-Way Bill Services", href: "/Taxation#eway-bill-services" },
+              { label: "E-Invoicing Consultancy", href: "/Taxation#e-invoicing-consultancy" }
             ]
           },
           {
-            title: "GST Compliance",
+            title: "Refunds & Export GST",
             links: [
-              { label: "GST LUT for Export", href: "/Taxation#gst-letter-of-undertaking-lut" },
-              { label: "GST Pay Certificate", href: "/Taxation#gst-pay-certificate" }
+              { label: "GST Refund Services", href: "/Taxation#gst-refund-services" },
+              { label: "Export GST Consultancy", href: "/Taxation#export-gst-consultancy" }
             ]
           }
         ]
       },
       {
-        title: "Income Tax Services",
+        title: "GST Advisory & Legal",
+        icon: "fas fa-balance-scale",
+        groups: [
+          {
+            title: "ITC & Audit Compliance",
+            links: [
+              { label: "Input Tax Credit (ITC) Consultancy", href: "/Taxation#itc-consultancy" },
+              { label: "GST Audit & Assessment", href: "/Taxation#gst-audit-assessment" },
+              { label: "GST Compliance Review", href: "/Taxation#gst-compliance-review" }
+            ]
+          },
+          {
+            title: "Notices & Litigation",
+            links: [
+              { label: "GST Notices & Representation", href: "/Taxation#gst-notices-representation" },
+              { label: "GST Appeals & Litigation", href: "/Taxation#gst-appeals-litigation" },
+              { label: "GST Advisory Services", href: "/Taxation#gst-advisory-services" }
+            ]
+          }
+        ]
+      },
+      {
+        title: "Income Tax Advisory",
         icon: "fas fa-calculator",
         groups: [
           {
-            title: "Taxation & Planning",
+            title: "Filings & Advisory",
             links: [
               { label: "ITR Return Filing", href: "/Taxation#itr-filing" },
-              { label: "Tax Planning & Advisory", href: "/Taxation#tax-planning-advisory" },
-              { label: "PAN & TAN Registration", href: "/Taxation#pan-tan-registration" }
+              { label: "PAN & TAN Registration", href: "/Taxation#pan-tan-registration" },
+              { label: "Income Tax Planning & Advisory", href: "/Taxation#tax-planning-advisory" },
+              { label: "Business Tax Consultancy", href: "/Taxation#business-tax-consultancy" },
+              { label: "EXIM Tax Consultancy", href: "/Taxation#exim-tax-consultancy" }
             ]
           },
           {
-            title: "TDS & Notice",
+            title: "TDS, Capital Gains & Tax",
             links: [
-              { label: "TDS & TCS Returns", href: "/Taxation#tds-tcs-consultancy" },
-              { label: "Scrutiny & Notice Help", href: "/Taxation#income-tax-notice-appeals" }
+              { label: "TDS & TCS Consultancy", href: "/Taxation#tds-tcs-consultancy" },
+              { label: "Advance Tax & Self-Assessment", href: "/Taxation#advance-tax-self-assessment" },
+              { label: "Capital Gains Consultancy", href: "/Taxation#capital-gains-consultancy" },
+              { label: "Tax Compliance Services", href: "/Taxation#income-tax-compliance-services" }
             ]
           }
         ]
       },
       {
-        title: "Business Compliance",
-        icon: "fas fa-briefcase",
+        title: "IT Notices, Audits & Corporate",
+        icon: "fas fa-gavel",
         groups: [
           {
-            title: "Corporate Filings",
+            title: "Notices, Appeals & Audits",
+            links: [
+              { label: "Income Tax Notice Assistance", href: "/Taxation#income-tax-notice-assistance" },
+              { label: "Income Tax Assessments", href: "/Taxation#income-tax-assessments" },
+              { label: "Income Tax Appeals", href: "/Taxation#income-tax-appeals" },
+              { label: "Tax Audit Support", href: "/Taxation#tax-audit-support" }
+            ]
+          },
+          {
+            title: "Business Compliance",
             links: [
               { label: "Labour License", href: "/Taxation#labour-licence" },
               { label: "Detailed Project Report (DPR)", href: "/Taxation#detailed-project-report" }

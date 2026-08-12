@@ -3,16 +3,16 @@ import TaxationClient from "@/components/pages/TaxationClient";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Corporate Tax & GST Advisory",
+  title: "GST Services & Corporate Tax Advisory | Y2K Exim",
   description:
-    "Corporate tax and GST advisory services by Y2K Exim. GST registration, GSTR filing, tax audits, and indirect tax compliance across India.",
+    "Comprehensive GST services by Y2K Exim: GST Registration, Return Filing (GSTR-1, 3B, 9), GST Refunds, Export GST, ITC Consultancy, Notices & Department Representation, Appeals, Audits, E-Way Bill, E-Invoicing, and Advisory.",
   alternates: {
     canonical: "/Taxation",
   },
   openGraph: {
-    title: "Corporate Tax & GST Advisory | Y2K Exim",
+    title: "GST Services & Corporate Tax Advisory | Y2K Exim",
     description:
-      "Expert Chartered Accountants and Tax Consultants for GST registration, return filing, tax audits, and corporate tax structuring in India.",
+      "Expert GST & Tax Consultants for GST Registration, GSTR Filing, GST Refunds, Export Consultancy, ITC Recovery, Notices, Appeals, E-Way Bill, E-Invoicing, and Compliance Audit in India.",
     url: "https://www.y2kexim.com/Taxation",
   },
 };
@@ -30,7 +30,7 @@ const taxationBreadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Taxation",
+      "name": "GST & Taxation Services",
       "item": "https://www.y2kexim.com/Taxation"
     }
   ]
@@ -39,14 +39,14 @@ const taxationBreadcrumbSchema = {
 const taxationServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Corporate Tax & GST Consultancy",
+  "serviceType": "GST & Corporate Tax Consultancy Services",
   "provider": {
     "@type": "Organization",
     "name": "Y2k Exim Indenting and Services Pvt Ltd",
     "url": "https://www.y2kexim.com"
   },
   "areaServed": "India",
-  "description": "GST compliance, GSTR filings, Income Tax return filing, tax audits, and corporate indirect tax advisory."
+  "description": "Full-spectrum GST registration, GSTR return filings, LUT & IGST refunds, export consultancy, ITC verification & recovery, department notice representation, appeals, GST audit, e-way bill, e-invoicing, and corporate tax advisory."
 };
 
 export default function TaxationPage() {
