@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="100%" height="100%">
+  <rect width="300" height="100" fill="none"/>
+  <circle cx="45" cy="50" r="22" fill="none" stroke="#00A896" stroke-width="4"/>
+  <path d="M25 50 H65 M45 28 V72 M30 38 Q45 50 30 62 M60 38 Q45 50 60 62" fill="none" stroke="#0F2C59" stroke-width="2"/>
+  <text x="78" y="48" font-family="Arial, sans-serif" font-weight="800" font-size="17" fill="#0F2C59" letter-spacing="1">TRANSPARENT</text>
+  <text x="78" y="66" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#00A896" letter-spacing="4">OVERSEAS</text>
+</svg>

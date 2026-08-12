@@ -2,79 +2,33 @@ import React from "react";
 
 export default function Clients() {
   const row1Logos = [
-    "/img/clients/blueenergybuild.webp",
-    "/img/clients/Bromine.webp",
-    "/img/clients/itek.webp",
-    "/img/clients/jsw.webp",
-    "/img/clients/lenovo.webp",
-    "/img/clients/poshan.webp",
-    "/img/clients/samhi.webp",
-    "/img/clients/stellarises.webp",
-    "/img/clients/sumeet.webp",
-    "/img/clients/techeco.webp",
-    "/img/clients/tungabhadraethonal.webp",
-    "/img/clients/vetogen.webp",
-    "/img/clients/1.webp",
-    "/img/clients/3.webp",
-    "/img/clients/4.webp",
-    "/img/clients/5.webp",
-    "/img/clients/12.webp",
-    "/img/clients/13.webp",
-    "/img/clients/14.webp",
-    "/img/clients/15.webp",
-    "/img/clients/16.webp",
-    "/img/clients/18.webp",
-    "/img/clients/20.webp",
-    "/img/clients/22.webp",
-    "/img/clients/23.webp",
-    "/img/clients/26.webp",
-    "/img/clients/southasianceramic.webp",
-    "/img/clients/globalgreencompany.webp",
-    "/img/clients/smilax (1).webp"
+    { src: "/img/clients/samsung.svg", alt: "Samsung Client Logo" },
+    { src: "/img/clients/hindware.svg", alt: "Hindware Client Logo" },
+    { src: "/img/clients/herocycles.svg", alt: "Hero Cycles Client Logo" },
+    { src: "/img/clients/spartan.svg", alt: "Spartan Engineering Client Logo" },
+    { src: "/img/clients/transparentoverseas.svg", alt: "Transparent Overseas Client Logo" },
+    { src: "/img/clients/maruti.svg", alt: "Maruti Suzuki Client Logo" },
+    { src: "/img/clients/parle-elizabeth.svg", alt: "Parle Elizabeth Tools Pvt Ltd Client Logo" },
+    { src: "/img/clients/haldia-petrochem.svg", alt: "Haldia Petrochem Ltd Client Logo" },
+    { src: "/img/clients/sunpharma.svg", alt: "Sunpharma Ltd Client Logo" },
+    { src: "/img/clients/indoco.svg", alt: "Indoco Remedies Ltd Client Logo" },
+    { src: "/img/clients/cachet-pharma.svg", alt: "Cachet Pharma Ltd Client Logo" },
+    { src: "/img/clients/toshiba-jsw.svg", alt: "Toshiba JSW Ltd Client Logo" },
   ];
 
   const row2Logos = [
-    "/img/clients/baypark (1).webp",
-    "/img/clients/amararaja.webp",
-    "/img/clients/jayarajfortune.webp",
-    "/img/clients/sarala.webp",
-    "/img/clients/bhagyalakshmi1.webp",
-    "/img/clients/sats1.webp",
-    "/img/clients/adithya_birla.webp",
-    "/img/clients/27.webp",
-    "/img/clients/28.webp",
-    "/img/clients/shyamg.webp",
-    "/img/clients/wirelux.webp",
-    "/img/clients/zeel group.webp",
-    "/img/clients/Mitsubishi (1).webp",
-    "/img/clients/notofrire.webp",
-    "/img/clients/patabiagro.webp",
-    "/img/clients/photons.webp",
-    "/img/clients/rossenterprises.webp",
-    "/img/clients/Shreenathji.webp",
-    "/img/clients/lcare.webp",
-    "/img/clients/kashiv.webp",
-    "/img/clients/frick.webp",
-    "/img/clients/fairy.webp",
-    "/img/clients/delight.webp",
-    "/img/clients/d&g.webp",
-    "/img/clients/awp.webp",
-    "/img/clients/biosci.webp",
-    "/img/clients/advanceagrolife.webp",
-    "/img/clients/aloe.webp",
-    "/img/clients/amino.webp",
-    "/img/clients/appl.webp"
+    { src: "/img/clients/topsail.svg", alt: "Topsail Appliances Pvt Ltd Client Logo" },
+    { src: "/img/clients/schwabe.svg", alt: "Dr Willmar Schwabe Herbal Client Logo" },
+    { src: "/img/clients/manaksia.svg", alt: "Manaksia Aluminum Corporation Client Logo" },
+    { src: "/img/clients/rasayan.svg", alt: "Rasayan Flavour and Fragrances Client Logo" },
+    { src: "/img/clients/alkem.svg", alt: "Alkem Pharma Client Logo" },
+    { src: "/img/clients/intas.svg", alt: "Intas Pharma Client Logo" },
+    { src: "/img/clients/anand-mechanical.svg", alt: "Anand Mechanical Works Pvt Ltd Client Logo" },
+    { src: "/img/clients/ceramin.svg", alt: "Ceramin India Pvt Ltd Client Logo" },
+    { src: "/img/clients/ashiana-exports.svg", alt: "Ashiana Exports Private Limited Client Logo" },
+    { src: "/img/clients/tovec-pharma.svg", alt: "Tovec Pharma Pvt Ltd Client Logo" },
+    { src: "/img/clients/ashok-leyland.svg", alt: "Ashok Leyland Client Logo" },
   ];
-
-  const getClientAlt = (url: string) => {
-    try {
-      const filename = url.split("/").pop() || "";
-      const name = filename.split(".")[0].replace(/%20/g, " ").replace(/[-_]/g, " ");
-      return `${name.charAt(0).toUpperCase() + name.slice(1)} Client Logo`;
-    } catch {
-      return "Y2K Exim Corporate Client Logo";
-    }
-  };
 
   return (
     <section id="clients" className="py-16 bg-white overflow-hidden relative">
@@ -82,25 +36,25 @@ export default function Clients() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-display">
-            Our Clients
+            Our Valued Clients
           </h2>
           <div className="w-24 h-1 bg-kc-orange mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
-            Trusted by leading companies across industries
+            Trusted by leading industrial conglomerates, MNCs, and corporate exporters across India
           </p>
         </div>
 
         {/* Row 1: Scrolling Left */}
         <div className="w-full overflow-hidden mb-6 relative">
           <div className="flex gap-8 w-max animate-client-left hover:[animation-play-state:paused] ease-linear">
-            {[...row1Logos, ...row1Logos].map((src, idx) => (
+            {[...row1Logos, ...row1Logos].map((item, idx) => (
               <div
                 key={idx}
-                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/60 rounded-xl border border-slate-100 p-2"
+                className="w-[220px] h-[105px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/70 rounded-2xl border border-slate-200/80 p-3.5 shadow-2xs hover:bg-white hover:shadow-md"
               >
                 <img
-                  src={src}
-                  alt={getClientAlt(src)}
+                  src={item.src}
+                  alt={item.alt}
                   className="max-h-full max-w-full object-contain block"
                   loading="lazy"
                 />
@@ -112,14 +66,14 @@ export default function Clients() {
         {/* Row 2: Scrolling Right */}
         <div className="w-full overflow-hidden relative">
           <div className="flex gap-8 w-max animate-client-right hover:[animation-play-state:paused] ease-linear">
-            {[...row2Logos, ...row2Logos].map((src, idx) => (
+            {[...row2Logos, ...row2Logos].map((item, idx) => (
               <div
                 key={idx}
-                className="w-[150px] h-[80px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/60 rounded-xl border border-slate-100 p-2"
+                className="w-[220px] h-[105px] flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-[1.08] bg-slate-50/70 rounded-2xl border border-slate-200/80 p-3.5 shadow-2xs hover:bg-white hover:shadow-md"
               >
                 <img
-                  src={src}
-                  alt={getClientAlt(src)}
+                  src={item.src}
+                  alt={item.alt}
                   className="max-h-full max-w-full object-contain block"
                   loading="lazy"
                 />

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="100%" height="100%">
+  <rect width="300" height="100" fill="none"/>
+  <polygon points="25,65 45,25 65,65 50,65 45,45 40,65" fill="#1A365D"/>
+  <polygon points="35,65 45,40 55,65" fill="#718096"/>
+  <text x="75" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#1A365D" letter-spacing="1">MANAKSIA</text>
+  <text x="75" y="66" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#4A5568" letter-spacing="2">ALUMINIUM CORP LTD</text>
+</svg>

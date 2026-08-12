@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="100%" height="100%">
+  <rect width="300" height="100" fill="none"/>
+  <path d="M25 70 L45 25 L65 70 L52 70 L45 50 L38 70 Z" fill="#004A99"/>
+  <circle cx="45" cy="38" r="6" fill="#E30613"/>
+  <text x="75" y="58" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="32" fill="#004A99" letter-spacing="2">ALKEM</text>
+</svg>
