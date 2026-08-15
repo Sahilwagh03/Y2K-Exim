@@ -211,8 +211,7 @@ export default function ContactForm() {
               <span>
                 I wish to Subscribe for receive promotional update on RCS sms / call / emails / whatsapp by{" "}
                 <Link
-                  href={COMPANY_CONTACT.websites.main}
-                  target="_blank"
+                  href="/"
                   className="text-kc-orange font-semibold hover:underline"
                 >
                   y2kexim.com
