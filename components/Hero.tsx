@@ -1,12 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-
-const texts = [
-  "DGFT Services",
-  "Industrial Subsidies",
-  "Taxation Services",
-];
+import { HERO_SLIDES } from "@/constants/hero";
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,7 +13,7 @@ export default function Hero() {
       setOpacity(0);
 
       const timeout = setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % texts.length);
+        setCurrentIndex((prev) => (prev + 1) % HERO_SLIDES.length);
         setOpacity(1);
       }, 500);
 
@@ -80,18 +75,20 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center py-16 md:py-0">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 min-h-[70px] sm:min-h-[80px] flex items-center justify-center font-display tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 min-h-[70px] sm:min-h-[80px] flex items-center justify-center font-display tracking-tight">
             <span
               style={{ opacity }}
               className="inline-block text-white drop-shadow-lg transition-opacity duration-500"
             >
-              {texts[currentIndex]}
+              {HERO_SLIDES[currentIndex].title}
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed font-medium">
-            Your trusted partner for DGFT, Industrial Subsidies, Customs, and
-            Taxation Solutions Across INDIA.
+          <p
+            style={{ opacity }}
+            className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed font-medium transition-opacity duration-500 min-h-[75px] sm:min-h-[60px]"
+          >
+            {HERO_SLIDES[currentIndex].description}
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
@@ -116,3 +113,4 @@ export default function Hero() {
     </section>
   );
 }
+
