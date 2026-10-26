@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import JsonLd, { organizationSchema } from "@/components/JsonLd";
+import AppShell from "@/components/AppShell";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -109,10 +107,7 @@ export default function RootLayout({
         <JsonLd data={organizationSchema} />
       </head>
       <body className="min-h-full flex flex-col font-sans">
-        <Header />
-        <Navbar />
-        {children}
-        <Footer />
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );
