@@ -126,10 +126,7 @@ export default function FunnelClient({
             />
             <div>
               <span className="font-extrabold text-sm sm:text-base tracking-wide text-white block leading-tight">
-                Y2K EXIM SERVICES
-              </span>
-              <span className="text-[10px] text-orange-400 font-semibold tracking-wider uppercase block">
-                EXIM & Customs Advisory
+                Y2K EXIM SERVICES PVT LTD.
               </span>
             </div>
           </div>
