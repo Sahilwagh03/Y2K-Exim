@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "inspo": {
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "inspo-mcp"
+      ]
+    }
+  }
+}

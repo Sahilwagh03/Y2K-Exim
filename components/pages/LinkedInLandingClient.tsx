@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface LinkedInLandingClientProps {
@@ -13,6 +13,15 @@ export default function LinkedInLandingClient({
   phoneNumber,
 }: LinkedInLandingClientProps) {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Simple redirect to WhatsApp after 2 seconds
+    const timer = setTimeout(() => {
+      window.location.href = whatsappUrl;
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [whatsappUrl]);
 
   const toggleFaq = (idx: number) => {
     setActiveFaq(activeFaq === idx ? null : idx);
